@@ -6,45 +6,49 @@ import Carousel from "react-bootstrap/Carousel";
 
 export default function Home() {
   return (
-    <div className="home-banner container-fluid p-0">
-      <Carousel indicators={true} prevIcon="" nextIcon="" interval={5000}>
-        <Carousel.Item>
-          <Image
-            // className="home-carousel"
+    <div className="container-fluid p-0">
+      <div className="home-logo">
+        <Image
+          src="/assets/logo.jpg"
+          width={100}
+          height={100}
+          style={{ borderRadius: "50%" }}
+        />
+      </div>
+      <div>
+        <Carousel indicators={true} prevIcon="" nextIcon="" interval={5000}>
+          <Carousel.Item>
+            {/* <Image
             src="/assets/bg-1.jpg"
             width={500}
-            height={300}
-            layout="responsive"
-            sizes="100vw"
-          />
-          {/* <img
-            className="d-block w-100"
-            src="/assets/bg-1.jpg"
-            alt="First slide"
-            layout="responsive"
+            height={200}
+            layout="fixed"
+            alt="Studio Jenggala"
+            sizes="50vx"
           /> */}
-        </Carousel.Item>
-        <Carousel.Item>
-          <Image
-            // className="home-carousel"
-            src="/assets/bg-2.jpg"
-            width={500}
-            height={300}
-            layout="responsive"
-            // sizes="100vw"
-          />
-        </Carousel.Item>
-        <Carousel.Item>
-          <Image
-            // className="home-carousel"
-            src="/assets/bg-3.jpg"
-            width={500}
-            height={300}
-            layout="responsive"
-            // sizes="100vw"
-          />
-        </Carousel.Item>
-      </Carousel>
+            <img
+              src="/assets/bg-1.jpg"
+              className="home-img d-block"
+              alt="Studio Jenggala"
+              // style={{ height: "auto" }}
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              src="/assets/bg-2.jpg"
+              className="d-block home-img"
+              alt="Studio Jenggala"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              src="/assets/bg-3.jpg"
+              className="d-block home-img"
+              alt="Studio Jenggala"
+            />
+          </Carousel.Item>
+        </Carousel>
+      </div>
     </div>
   );
 }
