@@ -4,7 +4,10 @@ import Head from "next/head";
 export default function Navbar() {
   return (
     <>
-      <nav className="navbar sticky-top navbar-expand-lg">
+      <nav
+        className="navbar sticky-top navbar-expand-lg"
+        style={{ backgroundColor: "white" }}
+      >
         <div className="container">
           <a className="navbar-brand" href="#">
             Logo
