@@ -4,11 +4,12 @@ import Head from "next/head";
 export default function Navbar() {
   return (
     <>
-      <nav className="navbar sticky-top navbar-expand-lg bg-light">
+      <nav className="navbar sticky-top navbar-expand-lg">
         <div className="container">
           <a className="navbar-brand" href="#">
             Logo
           </a>
+
           <button
             className="navbar-toggler"
             type="button"
@@ -20,50 +21,26 @@ export default function Navbar() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul className="navbar-nav">
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
-                  Home
+
+          <div
+            className="collapse navbar-collapse d-flex flex-row-reverse"
+            id="navbarNavDropdown"
+          >
+            <ul className="navbar-nav" id="navbarNavDropdown">
+              <li className="nav-item px-3" id="navbarNavDropdown">
+                <a className="nav-link" href="#" id="navbarNavDropdown">
+                  Galeri
                 </a>
               </li>
-              <li className="nav-item">
+              <li className="nav-item px-3">
                 <a className="nav-link" href="#">
-                  Features
+                  Alamat
                 </a>
               </li>
-              <li className="nav-item">
+              <li className="nav-item px-3 dropdown">
                 <a className="nav-link" href="#">
-                  Pricing
+                  Kontak
                 </a>
-              </li>
-              <li className="nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Dropdown link
-                </a>
-                <ul className="dropdown-menu">
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Action
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Another action
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Something else here
-                    </a>
-                  </li>
-                </ul>
               </li>
             </ul>
           </div>
