@@ -37,9 +37,14 @@ export default function Navbar() {
                   Alamat
                 </a>
               </li>
-              <li className="nav-item px-3 dropdown">
+              <li className="nav-item px-3">
                 <a className="nav-link" href="#">
                   Kontak
+                </a>
+              </li>
+              <li className="nav-item px-3">
+                <a className="nav-link" href="#">
+                  About Us
                 </a>
               </li>
             </ul>
