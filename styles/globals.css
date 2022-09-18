@@ -13,6 +13,13 @@ a {
 
 * {
   box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.footer-map {
+  width: 400px;
+  height: 200px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +29,13 @@ a {
   body {
     color: white;
     background: black;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer-map {
+    width: 250px;
+    height: auto;
+    /* visibility: hidden; */
   }
 }
