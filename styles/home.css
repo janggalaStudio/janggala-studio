@@ -23,15 +23,47 @@
 }
 
 .home-why {
-  background-color: dimgray;
-  height: 30rem;
+  background-color: #f6f0ff;
+  /* height: 30rem; */
+}
+
+.home-why-logo {
+  font-size: 50px;
+}
+
+.home-why-card {
+  background-color: #f6f0ff !important;
+}
+
+@media screen and (max-width: 768px) {
+  .home-why-text {
+    visibility: hidden !important;
+  }
+  .home-why-card {
+    height: 150px !important;
+  }
+  .home-why-logo {
+    font-size: 30px;
+  }
+  .home-why-title {
+    font-size: smaller;
+  }
+  .home-why-col {
+    margin: 0px !important;
+    padding: 0px !important;
+  }
+}
+
+.home-why-text {
+  visibility: visible;
 }
 
 .home-cinematic {
   height: 30rem;
+  /* background-color: #aeb5bf; */
 }
 
 .home-testimony {
   height: 30rem;
-  background-color: dimgray;
+  background-color: #e9dffa;
 }

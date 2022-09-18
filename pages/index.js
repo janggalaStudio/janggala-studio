@@ -176,9 +176,97 @@ export default function Home() {
         </div>
       </div>
       <div className="home-why py-5">
-        <h3 className="text-center" style={{ color: "white" }}>
+        <h3 className="text-center" style={{ color: "black" }}>
           Kenapa Pilih Jenggala Studio
         </h3>
+        <div className="container">
+          <div className="row row-cols-4 mx-0 mt-5 justify-content-center">
+            <div className="col home-why-col">
+              <div className="card text-center border-0 home-why-card">
+                <div className="card-body">
+                  <i className="bi bi-stopwatch home-why-logo"></i>
+                  <h5 className="card-title home-why-title">Card title</h5>
+                  <p className="card-text mt-4 home-why-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col home-why-col">
+              <div className="card text-center border-0 home-why-card">
+                <div className="card-body">
+                  <i className="bi bi-stopwatch home-why-logo"></i>
+                  <h5 className="card-title home-why-title">Card title</h5>
+                  <p className="card-text mt-4 home-why-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col home-why-col">
+              <div className="card text-center border-0 home-why-card">
+                <div className="card-body">
+                  <i className="bi bi-stopwatch home-why-logo"></i>
+                  <h5 className="card-title home-why-title">Card title</h5>
+                  <p className="card-text mt-4 home-why-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col home-why-col">
+              <div className="card text-center border-0 home-why-card">
+                <div className="card-body">
+                  <i className="bi bi-stopwatch home-why-logo"></i>
+                  <h5 className="card-title home-why-title">Card title</h5>
+                  <p className="card-text mt-4 home-why-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col home-why-col">
+              <div className="card text-center border-0 home-why-card">
+                <div className="card-body">
+                  <i className="bi bi-stopwatch home-why-logo"></i>
+                  <h5 className="card-title home-why-title">Card title</h5>
+                  <p className="card-text mt-4 home-why-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col home-why-col">
+              <div className="card text-center border-0 home-why-card">
+                <div className="card-body">
+                  <i className="bi bi-stopwatch home-why-logo"></i>
+                  <h5 className="card-title home-why-title">Card title</h5>
+                  <p className="card-text mt-4 home-why-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col home-why-col">
+              <div className="card text-center border-0 home-why-card">
+                <div className="card-body">
+                  <i className="bi bi-stopwatch home-why-logo"></i>
+                  <h5 className="card-title home-why-title">Card title</h5>
+                  <p className="card-text mt-4 home-why-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div className="home-cinematic py-5">
         <h3 className="text-center" style={{ color: "black" }}>
@@ -186,7 +274,7 @@ export default function Home() {
         </h3>
       </div>
       <div className="home-testimony py-5">
-        <h3 className="text-center" style={{ color: "white" }}>
+        <h3 className="text-center" style={{ color: "black" }}>
           Testimoni
         </h3>
       </div>
