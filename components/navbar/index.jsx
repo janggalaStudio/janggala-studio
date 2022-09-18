@@ -26,7 +26,7 @@ export default function Navbar() {
           </button>
 
           <div
-            className="collapse navbar-collapse d-flex flex-row-reverse"
+            className="collapse navbar-collapse justify-content-end"
             id="navbarNavDropdown"
           >
             <ul className="navbar-nav" id="navbarNavDropdown">

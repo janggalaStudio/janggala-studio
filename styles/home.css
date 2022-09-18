@@ -8,8 +8,30 @@
 }
 
 .home-img {
-  /* height: 500px; */
   width: 100%;
   height: 500px;
   object-fit: cover;
+}
+
+.home-card-title {
+  text-decoration: none;
+  color: white;
+}
+
+.home-card-title:hover {
+  color: white;
+}
+
+.home-why {
+  background-color: dimgray;
+  height: 30rem;
+}
+
+.home-cinematic {
+  height: 30rem;
+}
+
+.home-testimony {
+  height: 30rem;
+  background-color: dimgray;
 }
