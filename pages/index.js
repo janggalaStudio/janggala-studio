@@ -47,7 +47,7 @@ export default function Home() {
         </Carousel>
       </div>
       <div className="home-services my-5 container">
-        <h3 className="text-center">Jenggala Studio</h3>
+        <h3 className="text-center">Janggala Studio</h3>
         <div className="row row-cols-4 mt-5 p-0 justify-content-center">
           <div className="col p-0 m-0">
             <div className="card rounded-0">
@@ -177,7 +177,7 @@ export default function Home() {
       </div>
       <div className="home-why py-5">
         <h3 className="text-center" style={{ color: "black" }}>
-          Kenapa Pilih Jenggala Studio
+          Kenapa Pilih Janggala Studio
         </h3>
         <div className="container">
           <div className="row row-cols-3 mx-0 mt-5 justify-content-center">
@@ -377,5 +377,5 @@ export default function Home() {
 }
 
 Home.getLayout = function getLayout(page) {
-  return <Layout title={"Jenggala Studio"}>{page}</Layout>;
+  return <Layout title={"Janggala Studio"}>{page}</Layout>;
 };

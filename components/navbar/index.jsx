@@ -32,9 +32,11 @@ export default function Navbar() {
           >
             <ul className="navbar-nav" id="navbarNavDropdown">
               <li className="nav-item px-3" id="navbarNavDropdown">
-                <a className="nav-link" href="#" id="navbarNavDropdown">
-                  Galeri
-                </a>
+                <Link href="/galeri">
+                  <a className="nav-link" id="navbarNavDropdown">
+                    Galeri
+                  </a>
+                </Link>
               </li>
               <li className="nav-item px-3">
                 <Link href="/alamat">

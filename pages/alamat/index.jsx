@@ -51,5 +51,5 @@ export default function Alamat() {
 }
 
 Alamat.getLayout = function getLayout(page) {
-  return <Layout title={"Jenggala Studio"}>{page}</Layout>;
+  return <Layout title={"Janggala Studio"}>{page}</Layout>;
 };

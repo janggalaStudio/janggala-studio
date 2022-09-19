@@ -1,0 +1,29 @@
+.galeri-row {
+  flex-wrap: wrap;
+}
+
+.galeri-col {
+  flex: 25%;
+  max-width: 25%;
+}
+
+.galeri-img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .galeri-col {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .galeri-col {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
