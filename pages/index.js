@@ -180,12 +180,18 @@ export default function Home() {
           Kenapa Pilih Jenggala Studio
         </h3>
         <div className="container">
-          <div className="row row-cols-4 mx-0 mt-5 justify-content-center">
+          <div className="row row-cols-3 mx-0 mt-5 justify-content-center">
             <div className="col home-why-col">
               <div className="card text-center border-0 home-why-card">
                 <div className="card-body">
-                  <i className="bi bi-stopwatch home-why-logo"></i>
-                  <h5 className="card-title home-why-title">Card title</h5>
+                  <img
+                    src="/assets/fast-time.png"
+                    className="home-why-icon"
+                    alt="fast-time"
+                  />
+                  <h5 className="card-title home-why-title mt-2">
+                    Fast Response
+                  </h5>
                   <p className="card-text mt-4 home-why-text">
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
@@ -196,8 +202,14 @@ export default function Home() {
             <div className="col home-why-col">
               <div className="card text-center border-0 home-why-card">
                 <div className="card-body">
-                  <i className="bi bi-stopwatch home-why-logo"></i>
-                  <h5 className="card-title home-why-title">Card title</h5>
+                  <img
+                    src="/assets/photographer.png"
+                    className="home-why-icon"
+                    alt="expert-team"
+                  />
+                  <h5 className="card-title home-why-title mt-2">
+                    Expert Team
+                  </h5>
                   <p className="card-text mt-4 home-why-text">
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
@@ -208,8 +220,14 @@ export default function Home() {
             <div className="col home-why-col">
               <div className="card text-center border-0 home-why-card">
                 <div className="card-body">
-                  <i className="bi bi-stopwatch home-why-logo"></i>
-                  <h5 className="card-title home-why-title">Card title</h5>
+                  <img
+                    src="/assets/thumbs-up.png"
+                    className="home-why-icon"
+                    alt="greate-service"
+                  />
+                  <h5 className="card-title home-why-title mt-2">
+                    Great Service
+                  </h5>
                   <p className="card-text mt-4 home-why-text">
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
@@ -217,11 +235,17 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="col home-why-col">
+            <div className="col home-why-col mt-3">
               <div className="card text-center border-0 home-why-card">
                 <div className="card-body">
-                  <i className="bi bi-stopwatch home-why-logo"></i>
-                  <h5 className="card-title home-why-title">Card title</h5>
+                  <img
+                    src="/assets/studio.png"
+                    className="home-why-icon"
+                    alt="studio"
+                  />
+                  <h5 className="card-title home-why-title mt-2">
+                    Profesional Studio
+                  </h5>
                   <p className="card-text mt-4 home-why-text">
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
@@ -229,35 +253,17 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="col home-why-col">
+            <div className="col home-why-col mt-3">
               <div className="card text-center border-0 home-why-card">
                 <div className="card-body">
-                  <i className="bi bi-stopwatch home-why-logo"></i>
-                  <h5 className="card-title home-why-title">Card title</h5>
-                  <p className="card-text mt-4 home-why-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col home-why-col">
-              <div className="card text-center border-0 home-why-card">
-                <div className="card-body">
-                  <i className="bi bi-stopwatch home-why-logo"></i>
-                  <h5 className="card-title home-why-title">Card title</h5>
-                  <p className="card-text mt-4 home-why-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col home-why-col">
-              <div className="card text-center border-0 home-why-card">
-                <div className="card-body">
-                  <i className="bi bi-stopwatch home-why-logo"></i>
-                  <h5 className="card-title home-why-title">Card title</h5>
+                  <img
+                    src="/assets/stars.png"
+                    className="home-why-icon"
+                    alt="great-quality"
+                  />
+                  <h5 className="card-title home-why-title mt-2">
+                    Greate Quality
+                  </h5>
                   <p className="card-text mt-4 home-why-text">
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
@@ -273,10 +279,85 @@ export default function Home() {
           Video Cinematic
         </h3>
       </div>
-      <div className="home-testimony py-5">
+      <div className="home-testimony py-5 container-fluid">
         <h3 className="text-center" style={{ color: "black" }}>
           Testimoni
         </h3>
+        <div className="row row-cols-4 justify-content-center mt-5">
+          <div className="col">
+            <div className="card border-0" style={{ height: "25rem" }}>
+              <div className="card-body">
+                <p className="card-text">
+                  Harganya murah kualitas wahhh!!! Foto di studio tema nya gak
+                  ngebosenin, pas photo bisa langsung jadi, studio adem, tema
+                  selalu up to date, kekinian pkoknya lahh. Fotographer nya
+                  ramah jangan sungkan kalo mau tanya harga, bisa dinego.
+                  rekomendet bgt buat yg pengen abadikan momen photo atau video
+                  sinematic kalian dengan harga murah tapi hasilnya wahh.
+                </p>
+                <div className="row home-testimony-user align-items-center">
+                  <div className="col">
+                    <img
+                      src="https://lh3.googleusercontent.com/a-/ACNPEu93h4mCWP1GHeFGGVI-1A_UhiRoaR9XIFLBGSxFTw=w60-h60-p-rp-mo-br100"
+                      alt=""
+                      className="home-testimony-img rounded-circle"
+                    />
+                  </div>
+                  <div className="col-auto">
+                    <h6 className="card-title">Angga AD</h6>
+                    {/* <h6 className="card-subtitle">Mahasiswa</h6> */}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col">
+            <div className="card border-0" style={{ height: "25rem" }}>
+              <div className="card-body">
+                <p className="card-text">
+                  Pelayanan sangat memuaskan ramah dan humoris. Hasil fotonya
+                  sangat memuaskan😍🤩
+                </p>
+                <div className="row home-testimony-user align-items-center">
+                  <div className="col">
+                    <img
+                      src="/assets/logo.jpg"
+                      alt=""
+                      className="home-testimony-img rounded-circle"
+                    />
+                  </div>
+                  <div className="col-auto">
+                    <h6 className="card-title">Irawati Azjuairiyah</h6>
+                    {/* <h6 className="card-subtitle">Mahasiswa</h6> */}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col">
+            <div className="card border-0" style={{ height: "25rem" }}>
+              <div className="card-body">
+                <p className="card-text">
+                  Fotographer profesional, buat usaha di desanya agar dekat
+                  dengan orang yang dicintainya 💝💝💝💝💝💝
+                </p>
+                <div className="row home-testimony-user align-items-center">
+                  <div className="col">
+                    <img
+                      src="/assets/logo.jpg"
+                      alt=""
+                      className="home-testimony-img rounded-circle"
+                    />
+                  </div>
+                  <div className="col-auto">
+                    <h6 className="card-title">Syarif Hidayat</h6>
+                    {/* <h6 className="card-subtitle">Mahasiswa</h6> */}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
