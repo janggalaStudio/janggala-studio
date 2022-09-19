@@ -305,6 +305,11 @@ export default function Home() {
                   </div>
                   <div className="col-auto">
                     <h6 className="card-title">Angga AD</h6>
+                    <i className="bi-star-fill" style={{ color: "yellow" }}></i>
+                    <i className="bi-star-fill" style={{ color: "yellow" }}></i>
+                    <i className="bi-star-fill" style={{ color: "yellow" }}></i>
+                    <i className="bi-star-fill" style={{ color: "yellow" }}></i>
+                    <i className="bi-star-fill" style={{ color: "yellow" }}></i>
                     {/* <h6 className="card-subtitle">Mahasiswa</h6> */}
                   </div>
                 </div>
@@ -328,7 +333,11 @@ export default function Home() {
                   </div>
                   <div className="col-auto">
                     <h6 className="card-title">Irawati Azjuairiyah</h6>
-                    {/* <h6 className="card-subtitle">Mahasiswa</h6> */}
+                    <i className="bi-star-fill" style={{ color: "yellow" }}></i>
+                    <i className="bi-star-fill" style={{ color: "yellow" }}></i>
+                    <i className="bi-star-fill" style={{ color: "yellow" }}></i>
+                    <i className="bi-star-fill" style={{ color: "yellow" }}></i>
+                    <i className="bi-star-fill" style={{ color: "yellow" }}></i>
                   </div>
                 </div>
               </div>
@@ -351,7 +360,11 @@ export default function Home() {
                   </div>
                   <div className="col-auto">
                     <h6 className="card-title">Syarif Hidayat</h6>
-                    {/* <h6 className="card-subtitle">Mahasiswa</h6> */}
+                    <i className="bi-star-fill" style={{ color: "yellow" }}></i>
+                    <i className="bi-star-fill" style={{ color: "yellow" }}></i>
+                    <i className="bi-star-fill" style={{ color: "yellow" }}></i>
+                    <i className="bi-star-fill" style={{ color: "yellow" }}></i>
+                    <i className="bi-star-fill" style={{ color: "yellow" }}></i>
                   </div>
                 </div>
               </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import Link from "next/link";
 
 export default function Navbar() {
   return (
@@ -9,9 +10,9 @@ export default function Navbar() {
         style={{ backgroundColor: "white" }}
       >
         <div className="container">
-          <a className="navbar-brand" href="#">
-            Logo
-          </a>
+          <Link href="/">
+            <a className="navbar-brand">Logo</a>
+          </Link>
 
           <button
             className="navbar-toggler"
@@ -36,14 +37,9 @@ export default function Navbar() {
                 </a>
               </li>
               <li className="nav-item px-3">
-                <a className="nav-link" href="#">
-                  Alamat
-                </a>
-              </li>
-              <li className="nav-item px-3">
-                <a className="nav-link" href="#">
-                  Kontak
-                </a>
+                <Link href="/alamat">
+                  <a className="nav-link">Kontak</a>
+                </Link>
               </li>
               <li className="nav-item px-3">
                 <a className="nav-link" href="#">
