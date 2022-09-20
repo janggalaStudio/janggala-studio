@@ -6,17 +6,17 @@ function Testimony() {
       <h3 className="text-center" style={{ color: "black" }}>
         Testimoni
       </h3>
-      <div className="row row-cols-4 justify-content-center mt-5">
+      <div
+        className="row row-cols-4 g-4 justify-content-center mt-4"
+        // style={{ padding: "0 100px" }}
+      >
         <div className="col">
-          <div className="card border-0" style={{ height: "25rem" }}>
+          <div className="card border-0" style={{ height: "17rem" }}>
             <div className="card-body">
               <p className="card-text">
                 Harganya murah kualitas wahhh!!! Foto di studio tema nya gak
                 ngebosenin, pas photo bisa langsung jadi, studio adem, tema
-                selalu up to date, kekinian pkoknya lahh. Fotographer nya ramah
-                jangan sungkan kalo mau tanya harga, bisa dinego. rekomendet bgt
-                buat yg pengen abadikan momen photo atau video sinematic kalian
-                dengan harga murah tapi hasilnya wahh.
+                selalu up to date, kekinian pkoknya lahh.
               </p>
               <div className="row home-testimony-user align-items-center">
                 <div className="col">
@@ -39,7 +39,7 @@ function Testimony() {
           </div>
         </div>
         <div className="col">
-          <div className="card border-0" style={{ height: "25rem" }}>
+          <div className="card border-0" style={{ height: "17rem" }}>
             <div className="card-body">
               <p className="card-text">
                 Pelayanan sangat memuaskan ramah dan humoris. Hasil fotonya
@@ -66,7 +66,7 @@ function Testimony() {
           </div>
         </div>
         <div className="col">
-          <div className="card border-0" style={{ height: "25rem" }}>
+          <div className="card border-0" style={{ height: "17rem" }}>
             <div className="card-body">
               <p className="card-text">
                 Fotographer profesional, buat usaha di desanya agar dekat dengan

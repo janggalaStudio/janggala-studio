@@ -9,9 +9,9 @@ import Offcanvas from "react-bootstrap/Offcanvas";
 export default function NavbarMenu() {
   return (
     <>
-      <Navbar sticky="top" expand="md" style={{ backgroundColor: "white" }}>
+      <Navbar sticky="top" expand="md" className="navbar-style">
         <Container>
-          <Navbar.Brand href="/">Logo</Navbar.Brand>
+          <Navbar.Brand href="/">LOGO</Navbar.Brand>
           <Navbar.Toggle aria-controls="offcanvasNavbar-expand-md" />
           <Navbar.Offcanvas
             id="offcanvasNavbar-expand-md"
@@ -26,7 +26,7 @@ export default function NavbarMenu() {
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="ms-auto">
-                <NavDropdown className="mx-1" title="Galeri">
+                <NavDropdown className="mx-1" title="GALERI">
                   <NavDropdown.Item href="/galeri">
                     Foto Terbaru
                   </NavDropdown.Item>
@@ -41,10 +41,10 @@ export default function NavbarMenu() {
                   </NavDropdown.Item>
                 </NavDropdown>
                 <Nav.Link className="mx-1" href="/kontak">
-                  Kontak
+                  KONTAK
                 </Nav.Link>
                 <Nav.Link className="ms-1" href="/aboutUs">
-                  About Us
+                  ABOUT US
                 </Nav.Link>
               </Nav>
             </Offcanvas.Body>
