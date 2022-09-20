@@ -22,6 +22,11 @@ a {
   height: 200px;
 }
 
+.floating-btn {
+  bottom: 50px !important;
+  right: 100px !important;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

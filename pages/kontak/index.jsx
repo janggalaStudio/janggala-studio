@@ -1,7 +1,7 @@
 import React from "react";
-import Layout from "../../components/layout/alamat";
+import Layout from "../../components/layout/kontak";
 
-export default function Alamat() {
+export default function Kontak() {
   return (
     <>
       <div style={{ backgroundColor: "#e9dffa" }}>
@@ -50,6 +50,6 @@ export default function Alamat() {
   );
 }
 
-Alamat.getLayout = function getLayout(page) {
+Kontak.getLayout = function getLayout(page) {
   return <Layout title={"Janggala Studio"}>{page}</Layout>;
 };

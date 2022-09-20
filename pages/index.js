@@ -5,17 +5,19 @@ import Layout from "../components/layout";
 import Carousel from "react-bootstrap/Carousel";
 import Services from "../components/services";
 import Testimony from "../components/testimony";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <div className="container-fluid p-0">
       <div className="home-logo">
-        <Image
+        {/* <Image
           src="/assets/logo.jpg"
           width={100}
           height={100}
           style={{ borderRadius: "50%" }}
-        />
+        /> */}
+        <h5>Hello world</h5>
       </div>
       <div>
         <Carousel
@@ -204,9 +206,14 @@ export default function Home() {
         </div>
       </div>
       <Testimony />
-      <button type="button" className="btn btn-success floating-btn">
-        Hubungi Kami
-      </button>
+      <Link href="/kontak">
+        <button
+          type="button"
+          className="btn btn-success floating-btn sticky-bottom position-fixed"
+        >
+          Hubungi Kami
+        </button>
+      </Link>
     </div>
   );
 }

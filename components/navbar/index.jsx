@@ -40,10 +40,10 @@ export default function NavbarMenu() {
                     Foto Home Service
                   </NavDropdown.Item>
                 </NavDropdown>
-                <Nav.Link className="mx-1" href="/alamat">
+                <Nav.Link className="mx-1" href="/kontak">
                   Kontak
                 </Nav.Link>
-                <Nav.Link className="mx-1" href="/aboutUs">
+                <Nav.Link className="ms-1" href="/aboutUs">
                   About Us
                 </Nav.Link>
               </Nav>
