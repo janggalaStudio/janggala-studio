@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import Navbar from "../navbar";
+import NavbarMenu from "../navbar";
 import Footer from "../footer";
 
 export default function Layout(props) {
@@ -12,7 +12,7 @@ export default function Layout(props) {
       </Head>
 
       <div>
-        <Navbar />
+        <NavbarMenu />
         <main>{props.children}</main>
         <Footer />
       </div>

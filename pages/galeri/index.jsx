@@ -1,69 +1,64 @@
-import React from "react";
 import Layout from "../../components/layout";
+import axios from "../../utils/axios";
+import React, { useState, useEffect } from "react";
 
 function Galeri() {
+  const [data, setData] = useState([]);
+  const instagram = async () => {
+    try {
+      const result = await axios.get();
+      setData(result.data.data);
+      //   console.log(result);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  console.log(data);
+  useEffect(() => {
+    instagram();
+  }, []);
+
   return (
     <>
-      <div style={{ backgroundColor: "#e9dffa" }}>
-        <h3 className="text-center py-5">Galeri Kami</h3>
+      <div className="" style={{ backgroundColor: "#e9dffa" }}>
+        <h3 className="text-center py-5 mb-0">Galeri Kami</h3>
       </div>
-      <div className="container my-3">
-        <div className="row d-flex galeri-row">
-          <div className="col galeri-col px-1">
-            <img
-              src="https://images.pexels.com/photos/13623557/pexels-photo-13623557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              alt=""
-              className="galeri-img"
-            />
-            <img
-              src="https://images.pexels.com/photos/5969628/pexels-photo-5969628.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              alt=""
-              className="galeri-img"
-            />
-            <img
-              src="https://images.pexels.com/photos/13681489/pexels-photo-13681489.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
-              alt=""
-              className="galeri-img"
-            />
-            <img
-              src="https://images.pexels.com/photos/12800709/pexels-photo-12800709.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
-              alt=""
-              className="galeri-img"
-            />
-            <img
-              src="https://images.pexels.com/photos/13461809/pexels-photo-13461809.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
-              alt=""
-              className="galeri-img"
-            />
-            <img
-              src="https://images.pexels.com/photos/13547192/pexels-photo-13547192.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
-              alt=""
-              className="galeri-img"
-            />
+      <div className="container py-3" style={{ backgroundColor: "white" }}>
+        {/* <div className="row text-center">
+          <div className="col-1 border rounded-pill">
+            <h6>Terbaru</h6>
           </div>
-          {/* <div className="col galeri-col px-1">
-           
-          </div> */}
-        </div>
-        {/* <div className="row d-flex galeri-row">
-          <div className="col galeri-col px-1">
-            <img
-              src="https://images.pexels.com/photos/12800709/pexels-photo-12800709.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
-              alt=""
-              className="galeri-img"
-            />
-            <img
-              src="https://images.pexels.com/photos/13461809/pexels-photo-13461809.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
-              alt=""
-              className="galeri-img"
-            />
-            <img
-              src="https://images.pexels.com/photos/13547192/pexels-photo-13547192.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
-              alt=""
-              className="galeri-img"
-            />
+          <div className="col-1 border rounded-pill">
+            <h6>Wedding</h6>
+          </div>
+          <div className="col-1 border rounded-pill">
+            <h6>Personal</h6>
+          </div>
+          <div className="col-1 border rounded-pill">
+            <h6>Family</h6>
+          </div>
+          <div className="col-1 border rounded-pill">
+            <h6>Group</h6>
+          </div>
+          <div className="col-1 border rounded-pill">
+            <h6>Graduation</h6>
           </div>
         </div> */}
+        <div className="row row-cols-4 galeri-row">
+          {data.map((item) => (
+            <div
+              className="col galeri-col px-1 align-self-center"
+              key={item.id}
+            >
+              <img
+                src={item.media_url}
+                alt="galeri-terbaru"
+                className="galeri-img"
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </>
   );

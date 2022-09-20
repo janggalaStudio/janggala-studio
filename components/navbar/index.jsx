@@ -1,57 +1,56 @@
 import React from "react";
-import Head from "next/head";
 import Link from "next/link";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropdown";
+import Container from "react-bootstrap/Container";
+import Offcanvas from "react-bootstrap/Offcanvas";
 
-export default function Navbar() {
+export default function NavbarMenu() {
   return (
     <>
-      <nav
-        className="navbar sticky-top navbar-expand-lg"
-        style={{ backgroundColor: "white" }}
-      >
-        <div className="container">
-          <Link href="/">
-            <a className="navbar-brand">Logo</a>
-          </Link>
-
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+      <Navbar sticky="top" expand="md" style={{ backgroundColor: "white" }}>
+        <Container>
+          <Navbar.Brand href="/">Logo</Navbar.Brand>
+          <Navbar.Toggle aria-controls="offcanvasNavbar-expand-md" />
+          <Navbar.Offcanvas
+            id="offcanvasNavbar-expand-md"
+            aria-labelledby="offcanvasNavbarLabel-expand-md"
+            placement="end"
+            style={{ width: "200px" }}
           >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-
-          <div
-            className="collapse navbar-collapse justify-content-end"
-            id="navbarNavDropdown"
-          >
-            <ul className="navbar-nav" id="navbarNavDropdown">
-              <li className="nav-item px-3" id="navbarNavDropdown">
-                <Link href="/galeri">
-                  <a className="nav-link" id="navbarNavDropdown">
-                    Galeri
-                  </a>
-                </Link>
-              </li>
-              <li className="nav-item px-3">
-                <Link href="/alamat">
-                  <a className="nav-link">Kontak</a>
-                </Link>
-              </li>
-              <li className="nav-item px-3">
-                <a className="nav-link" href="#">
+            <Offcanvas.Header closeButton>
+              <Offcanvas.Title id="offcanvasNavbarLabel-expand-md">
+                Offcanvas
+              </Offcanvas.Title>
+            </Offcanvas.Header>
+            <Offcanvas.Body>
+              <Nav className="ms-auto">
+                <NavDropdown className="mx-1" title="Galeri">
+                  <NavDropdown.Item href="/galeri">
+                    Foto Terbaru
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="/">Foto Wedding</NavDropdown.Item>
+                  <NavDropdown.Item href="/">Foto Family</NavDropdown.Item>
+                  <NavDropdown.Item href="/">Foto Personal</NavDropdown.Item>
+                  <NavDropdown.Item href="/">Foto Graduation</NavDropdown.Item>
+                  <NavDropdown.Item href="/">Foto New Born</NavDropdown.Item>
+                  <NavDropdown.Item href="/">Foto Maternity</NavDropdown.Item>
+                  <NavDropdown.Item href="/">
+                    Foto Home Service
+                  </NavDropdown.Item>
+                </NavDropdown>
+                <Nav.Link className="mx-1" href="/alamat">
+                  Kontak
+                </Nav.Link>
+                <Nav.Link className="mx-1" href="/aboutUs">
                   About Us
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+                </Nav.Link>
+              </Nav>
+            </Offcanvas.Body>
+          </Navbar.Offcanvas>
+        </Container>
+      </Navbar>
     </>
   );
 }

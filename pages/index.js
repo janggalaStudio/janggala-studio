@@ -3,6 +3,8 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Layout from "../components/layout";
 import Carousel from "react-bootstrap/Carousel";
+import Services from "../components/services";
+import Testimony from "../components/testimony";
 
 export default function Home() {
   return (
@@ -46,135 +48,7 @@ export default function Home() {
           </Carousel.Item>
         </Carousel>
       </div>
-      <div className="home-services my-5 container">
-        <h3 className="text-center">Janggala Studio</h3>
-        <div className="row row-cols-4 mt-5 p-0 justify-content-center">
-          <div className="col p-0 m-0">
-            <div className="card rounded-0">
-              <img
-                src="https://images.pexels.com/photos/4205505/pexels-photo-4205505.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                className="card-img rounded-0"
-                alt="family-img"
-                style={{ height: "300px", objectFit: "cover" }}
-              />
-              <div className="card-img-overlay d-flex align-items-end justify-content-center">
-                <a href="#" className="stretched-link home-card-title">
-                  <h5 className="card-title ">Family</h5>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="col p-0 m-0">
-            <div className="card rounded-0">
-              <img
-                src="https://images.pexels.com/photos/265722/pexels-photo-265722.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                className="card-img rounded-0"
-                alt="wedding-img"
-                style={{ height: "300px", objectFit: "cover" }}
-              />
-              <div className="card-img-overlay d-flex align-items-end justify-content-center">
-                <a href="#" className="stretched-link home-card-title">
-                  <h5 className="card-title" style={{ color: "black" }}>
-                    Weeding
-                  </h5>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="col p-0 m-0">
-            <div className="card rounded-0">
-              <img
-                src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=600"
-                className="card-img rounded-0"
-                alt="personal-img"
-                style={{ height: "300px", objectFit: "cover" }}
-              />
-              <div className="card-img-overlay d-flex align-items-end justify-content-center">
-                <a href="#" className="stretched-link home-card-title">
-                  <h5 className="card-title" style={{ color: "black" }}>
-                    Personal
-                  </h5>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="col p-0 m-0">
-            <div className="card rounded-0">
-              <img
-                src="https://images.pexels.com/photos/1963622/pexels-photo-1963622.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt="group-img"
-                className="card-img rounded-0"
-                style={{ height: "300px", objectFit: "cover" }}
-              />
-              <div className="card-img-overlay d-flex align-items-end justify-content-center">
-                <a href="#" className="stretched-link home-card-title">
-                  <h5 className="card-title ">Group</h5>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="col p-0 m-0">
-            <div className="card rounded-0">
-              <img
-                src="https://images.pexels.com/photos/901964/pexels-photo-901964.jpeg?auto=compress&cs=tinysrgb&w=600"
-                className="card-img rounded-0"
-                alt="..."
-                style={{ height: "300px", objectFit: "cover" }}
-              />
-              <div className="card-img-overlay d-flex align-items-end justify-content-center">
-                <a href="#" className="stretched-link home-card-title">
-                  <h5 className="card-title ">Graduation</h5>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="col p-0 m-0">
-            <div className="card rounded-0">
-              <img
-                src="/assets/logo.jpg"
-                className="card-img rounded-0"
-                alt="..."
-                style={{ height: "300px", objectFit: "cover" }}
-              />
-              <div className="card-img-overlay d-flex align-items-end justify-content-center">
-                <a href="#" className="stretched-link home-card-title">
-                  <h5 className="card-title ">New Born</h5>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="col p-0 m-0">
-            <div className="card rounded-0">
-              <img
-                src="/assets/logo.jpg"
-                className="card-img rounded-0"
-                alt="..."
-                style={{ height: "300px", objectFit: "cover" }}
-              />
-              <div className="card-img-overlay d-flex align-items-end justify-content-center">
-                <a href="#" className="stretched-link home-card-title">
-                  <h5 className="card-title ">Home Service</h5>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="col p-0 m-0">
-            <div className="card rounded-0">
-              <img
-                src="/assets/logo.jpg"
-                className="card-img rounded-0"
-                alt="..."
-                style={{ height: "300px", objectFit: "cover" }}
-              />
-              <div className="card-img-overlay d-flex align-items-end justify-content-center">
-                <a href="#" className="stretched-link home-card-title">
-                  <h5 className="card-title ">Maternity</h5>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Services />
       <div className="home-why py-5">
         <h3 className="text-center" style={{ color: "black" }}>
           Kenapa Pilih Janggala Studio
@@ -278,100 +152,61 @@ export default function Home() {
         <h3 className="text-center" style={{ color: "black" }}>
           Video Cinematic
         </h3>
-      </div>
-      <div className="home-testimony py-5 container-fluid">
-        <h3 className="text-center" style={{ color: "black" }}>
-          Testimoni
-        </h3>
-        <div className="row row-cols-4 justify-content-center mt-5">
-          <div className="col">
-            <div className="card border-0" style={{ height: "25rem" }}>
-              <div className="card-body">
-                <p className="card-text">
-                  Harganya murah kualitas wahhh!!! Foto di studio tema nya gak
-                  ngebosenin, pas photo bisa langsung jadi, studio adem, tema
-                  selalu up to date, kekinian pkoknya lahh. Fotographer nya
-                  ramah jangan sungkan kalo mau tanya harga, bisa dinego.
-                  rekomendet bgt buat yg pengen abadikan momen photo atau video
-                  sinematic kalian dengan harga murah tapi hasilnya wahh.
-                </p>
-                <div className="row home-testimony-user align-items-center">
-                  <div className="col">
-                    <img
-                      src="https://lh3.googleusercontent.com/a-/ACNPEu93h4mCWP1GHeFGGVI-1A_UhiRoaR9XIFLBGSxFTw=w60-h60-p-rp-mo-br100"
-                      alt=""
-                      className="home-testimony-img rounded-circle"
-                    />
-                  </div>
-                  <div className="col-auto">
-                    <h6 className="card-title">Angga AD</h6>
-                    <i className="bi-star-fill" style={{ color: "yellow" }}></i>
-                    <i className="bi-star-fill" style={{ color: "yellow" }}></i>
-                    <i className="bi-star-fill" style={{ color: "yellow" }}></i>
-                    <i className="bi-star-fill" style={{ color: "yellow" }}></i>
-                    <i className="bi-star-fill" style={{ color: "yellow" }}></i>
-                    {/* <h6 className="card-subtitle">Mahasiswa</h6> */}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col">
-            <div className="card border-0" style={{ height: "25rem" }}>
-              <div className="card-body">
-                <p className="card-text">
-                  Pelayanan sangat memuaskan ramah dan humoris. Hasil fotonya
-                  sangat memuaskan😍🤩
-                </p>
-                <div className="row home-testimony-user align-items-center">
-                  <div className="col">
-                    <img
-                      src="/assets/logo.jpg"
-                      alt=""
-                      className="home-testimony-img rounded-circle"
-                    />
-                  </div>
-                  <div className="col-auto">
-                    <h6 className="card-title">Irawati Azjuairiyah</h6>
-                    <i className="bi-star-fill" style={{ color: "yellow" }}></i>
-                    <i className="bi-star-fill" style={{ color: "yellow" }}></i>
-                    <i className="bi-star-fill" style={{ color: "yellow" }}></i>
-                    <i className="bi-star-fill" style={{ color: "yellow" }}></i>
-                    <i className="bi-star-fill" style={{ color: "yellow" }}></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col">
-            <div className="card border-0" style={{ height: "25rem" }}>
-              <div className="card-body">
-                <p className="card-text">
-                  Fotographer profesional, buat usaha di desanya agar dekat
-                  dengan orang yang dicintainya 💝💝💝💝💝💝
-                </p>
-                <div className="row home-testimony-user align-items-center">
-                  <div className="col">
-                    <img
-                      src="/assets/logo.jpg"
-                      alt=""
-                      className="home-testimony-img rounded-circle"
-                    />
-                  </div>
-                  <div className="col-auto">
-                    <h6 className="card-title">Syarif Hidayat</h6>
-                    <i className="bi-star-fill" style={{ color: "yellow" }}></i>
-                    <i className="bi-star-fill" style={{ color: "yellow" }}></i>
-                    <i className="bi-star-fill" style={{ color: "yellow" }}></i>
-                    <i className="bi-star-fill" style={{ color: "yellow" }}></i>
-                    <i className="bi-star-fill" style={{ color: "yellow" }}></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div className="container justify-content-center d-flex mt-5">
+          <Carousel slide={true} indicators={false} interval={3000}>
+            <Carousel.Item>
+              <iframe
+                src="https://www.youtube.com/embed/YmfUJpiJ1kM"
+                frameborder="0"
+                width="350"
+                height="300"
+                className=""
+              ></iframe>
+              <iframe
+                src="https://www.youtube.com/embed/YmfUJpiJ1kM"
+                frameborder="0"
+                width="350"
+                height="300"
+                className="mx-4"
+              ></iframe>
+              <iframe
+                src="https://www.youtube.com/embed/YmfUJpiJ1kM"
+                frameborder="0"
+                width="350"
+                height="300"
+                className=""
+              ></iframe>
+            </Carousel.Item>
+            <Carousel.Item>
+              <iframe
+                src="https://www.youtube.com/embed/YmfUJpiJ1kM"
+                frameborder="0"
+                width="350"
+                height="300"
+                className=""
+              ></iframe>
+              <iframe
+                src="https://www.youtube.com/embed/YmfUJpiJ1kM"
+                frameborder="0"
+                width="350"
+                height="300"
+                className="mx-4"
+              ></iframe>
+              <iframe
+                src="https://www.youtube.com/embed/YmfUJpiJ1kM"
+                frameborder="0"
+                width="350"
+                height="300"
+                className=""
+              ></iframe>
+            </Carousel.Item>
+          </Carousel>
         </div>
       </div>
+      <Testimony />
+      <button type="button" className="btn btn-success floating-btn">
+        Hubungi Kami
+      </button>
     </div>
   );
 }
