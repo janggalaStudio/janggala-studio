@@ -2,37 +2,63 @@ import Layout from "../../components/layout";
 import axios from "../../utils/axios";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import FsLightbox from "fslightbox-react";
 
 function Galeri() {
+  const [lightboxController, setLightboxController] = useState({
+    toggler: false,
+    slide: 1,
+  });
+  const [source, setSource] = useState([]);
+
   const [data, setData] = useState([]);
   const instagram = async () => {
     try {
       const result = await axios.get();
       setData(result.data.data);
-      //   console.log(result);
     } catch (error) {
       console.log(error);
     }
   };
 
-  console.log(data);
+  function openLightboxOnSlide(number) {
+    setLightboxController({
+      toggler: !lightboxController.toggler,
+      slide: number,
+    });
+  }
+
+  const light = () => {
+    if (source.length == 0) {
+      data.map((item) => {
+        source.push(item.media_url);
+      });
+    }
+  };
+
   useEffect(() => {
     instagram();
   }, []);
 
+  useEffect(() => {
+    light();
+  }, [data]);
+
   return (
     <>
-      <div className="title-banner text-center container-fluid">
-        <div className="row">
-          <h3 className="title-text mb-0 mt-5 pt-5">GALERI</h3>
-        </div>
-        <div className="row">
-          <h3 className="title-subtitle mb-0 my-0 py-0">FOTO TERBARU</h3>
+      <div className="title-banner text-center justify-content-center container-fluid align-items-center d-flex">
+        <div className="row row-cols-1">
+          <div className="col">
+            <h3 className="title-text mb-0">GALERI</h3>
+          </div>
+          <div className="col">
+            <h3 className="title-subtitle">FOTO TERBARU</h3>
+          </div>
         </div>
       </div>
       <div className="container py-3" style={{ backgroundColor: "white" }}>
         <div className="row row-cols-4 galeri-row">
-          {data.map((item) => (
+          {data.map((item, index) => (
             <div
               className="col galeri-col px-1 align-self-center"
               key={item.id}
@@ -41,9 +67,15 @@ function Galeri() {
                 src={item.media_url}
                 alt="galeri-terbaru"
                 className="galeri-img"
+                onClick={() => openLightboxOnSlide(index + 1)}
               />
             </div>
           ))}
+          <FsLightbox
+            toggler={lightboxController.toggler}
+            sources={source}
+            slide={lightboxController.slide}
+          />
         </div>
         <Link href="/kontak">
           <button

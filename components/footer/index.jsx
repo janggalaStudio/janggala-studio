@@ -10,25 +10,27 @@ function Footer() {
         <div className="container">
           <div className="row m-0">
             <div className="col px-3" style={{ color: "white" }}>
-              <h3>LOGO</h3>
-              <p className="">
-                Janggalastudio, Jalan Mangu, Keyongan, Keyongan, Kabupaten
-                Boyolali, Jawa Tengah
+              <h3 className="footer-title">JANGGALA STUDIO</h3>
+              <p className="footer-content mt-4">
+                Jl. Mangu, Keyongan, Kec. Nogosari, Kabupaten Boyolali, Jawa
+                Tengah 57378
               </p>
             </div>
             <div className="col px-3">
-              <p style={{ color: "white" }}>MORE INFO</p>
-              <div className="row">
+              <h3 style={{ color: "white" }} className="footer-title">
+                MORE INFO
+              </h3>
+              <div className="row footer-content mt-4">
                 <p className="border-0" style={{ color: "white" }}>
-                  <i className="bi-instagram"></i> studiofotoboyolali
+                  <i className="bi-instagram"></i> @studiofotoboyolali
                 </p>
               </div>
-              <div className="row">
+              <div className="row footer-content">
                 <p style={{ color: "white" }}>
-                  <i className="bi-instagram"></i> jenggalastudio
+                  <i className="bi-instagram"></i> @dokumentasisoloboyolali
                 </p>
               </div>
-              <div className="row">
+              <div className="row footer-content">
                 <p style={{ color: "white" }}>
                   <i className="bi-whatsapp"></i> 0997135659035
                 </p>
