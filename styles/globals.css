@@ -48,6 +48,11 @@ a {
   border-color: rgb(49, 221, 92) !important;
 }
 
+.floating-btn:hover {
+  background-color: rgb(49, 194, 86) !important;
+  border-color: rgb(49, 194, 86) !important;
+}
+
 .title-banner {
   height: 15rem;
   background-image: url("/assets/bg-3.jpg");
@@ -65,6 +70,31 @@ a {
   font-family: "Raleway", sans-serif;
   letter-spacing: 2.5px;
   font-size: 15px;
+}
+
+.overlay-container {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  height: 200px;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: white;
+  padding: 20px 0 20px 0 !important;
+  margin: 0 !important;
+  text-align: center;
+}
+
+.overlay-container:hover .overlay {
+  opacity: 1;
+  cursor: pointer;
 }
 
 @media (prefers-color-scheme: dark) {

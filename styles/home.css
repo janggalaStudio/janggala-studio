@@ -125,6 +125,48 @@
   font-size: 15px;
 }
 
+.home-service-img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.overlay-service {
+  bottom: 58px;
+  position: absolute;
+  height: 200px;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: white;
+  padding: 20px 0 20px 0 !important;
+  margin: 0 !important;
+  text-align: center;
+}
+
+.overlay-container:hover .overlay-service {
+  opacity: 1;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 425px) {
+  .home-service-col {
+    height: 150px;
+    width: 300px !important;
+  }
+
+  .overlay-service {
+    height: 100px;
+  }
+
+  .home-service-img {
+    height: 100px;
+    object-fit: cover;
+  }
+}
+
 .home-faq {
   font-family: "Raleway", sans-serif;
 

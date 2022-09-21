@@ -60,15 +60,20 @@ function Galeri() {
         <div className="row row-cols-4 galeri-row">
           {data.map((item, index) => (
             <div
-              className="col galeri-col px-1 align-self-center"
+              className="col galeri-col align-self-center px-1"
               key={item.id}
             >
-              <img
-                src={item.media_url}
-                alt="galeri-terbaru"
-                className="galeri-img"
-                onClick={() => openLightboxOnSlide(index + 1)}
-              />
+              <div className="overlay-container">
+                <img
+                  src={item.media_url}
+                  alt="galeri-terbaru"
+                  className="galeri-img px-0"
+                />
+                <div
+                  className="overlay"
+                  onClick={() => openLightboxOnSlide(index + 1)}
+                ></div>
+              </div>
             </div>
           ))}
           <FsLightbox
