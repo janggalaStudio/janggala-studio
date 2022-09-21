@@ -46,12 +46,12 @@
   background-color: #f6f0ff !important;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   .home-why-text {
     visibility: hidden !important;
   }
   .home-why-card {
-    height: 150px !important;
+    height: 100px !important;
   }
   .home-why-logo {
     font-size: 30px;
@@ -62,6 +62,12 @@
   .home-why-col {
     margin: 0px !important;
     padding: 0px !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .home-testimony-col {
+    width: 300px !important;
   }
 }
 
@@ -94,9 +100,13 @@
   background-color: #e9dffa;
 }
 
+.home-testimony-card {
+  height: 17rem !important;
+}
+
 .home-testimony-img {
-  width: 50px !important;
-  height: 50px !important;
+  width: 40px !important;
+  height: 40px !important;
   object-fit: cover !important;
 }
 
@@ -164,6 +174,14 @@
   .home-service-img {
     height: 100px;
     object-fit: cover;
+  }
+
+  .home-testimony-col {
+    width: 300px !important;
+  }
+
+  .home-testimony-card {
+    height: 15rem !important;
   }
 }
 

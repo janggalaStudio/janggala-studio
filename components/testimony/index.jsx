@@ -8,8 +8,8 @@ function Testimony() {
         className="row row-cols-4 g-4 justify-content-center mt-4"
         // style={{ padding: "0 100px" }}
       >
-        <div className="col">
-          <div className="card border-0" style={{ height: "17rem" }}>
+        <div className="col home-testimony-col">
+          <div className="card border-0 home-testimony-card">
             <div className="card-body">
               <p className="card-text home-testimony-text">
                 Harganya murah kualitas wahhh!!! Foto di studio tema nya gak
@@ -36,8 +36,8 @@ function Testimony() {
             </div>
           </div>
         </div>
-        <div className="col">
-          <div className="card border-0" style={{ height: "17rem" }}>
+        <div className="col home-testimony-col">
+          <div className="card border-0 home-testimony-card">
             <div className="card-body">
               <p className="card-text home-testimony-text">
                 Pelayanan sangat memuaskan ramah dan humoris. Hasil fotonya
@@ -65,8 +65,8 @@ function Testimony() {
             </div>
           </div>
         </div>
-        <div className="col">
-          <div className="card border-0" style={{ height: "17rem" }}>
+        <div className="col home-testimony-col">
+          <div className="card border-0 home-testimony-card">
             <div className="card-body">
               <p className="card-text home-testimony-text">
                 Fotographer profesional, buat usaha di desanya agar dekat dengan
