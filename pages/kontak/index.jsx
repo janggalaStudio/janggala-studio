@@ -16,17 +16,19 @@ export default function Kontak() {
 
   return (
     <>
-      <div className="container-fluid pt-5 title-banner text-center">
-        <h3 className="title-text pt-5">HUBUNGI KAMI</h3>
+      <div className="container-fluid justify-content-center align-items-center d-flex title-banner text-center">
+        <h3 className="title-text">HUBUNGI KAMI</h3>
       </div>
       <div className="container py-2">
         <div className="row pt-4">
-          <div className="col">
+          <div className="col-md text-center">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15824.258035221214!2d110.749864!3d-7.4581159999999995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x49d60cbd12d9bc8b!2sJanggalastudio!5e0!3m2!1sid!2sid!4v1663578739274!5m2!1sid!2sid"
-              width="800"
-              height="450"
+              // className="kontak-map"
+              className="kontak-map"
               allowfullscreen=""
+              // width={window.innerWidth}
+              // height={window.innerHeight * 0.5}
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
