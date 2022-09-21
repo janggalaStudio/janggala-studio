@@ -1,0 +1,12 @@
+.kontak-title {
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 1px;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.kontak-text {
+  /* font-family: "Raleway", sans-serif !important; */
+  letter-spacing: 1px !important;
+  font-size: 13px !important;
+}

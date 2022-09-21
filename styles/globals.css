@@ -26,7 +26,26 @@ a {
 
 .floating-btn {
   bottom: 50px !important;
-  right: 100px !important;
+  right: 50px !important;
+}
+
+.title-banner {
+  height: 15rem;
+  background-image: url("/assets/bg-3.jpg");
+  object-fit: cover;
+}
+
+.title-text {
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 2.5px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.title-subtitle {
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 2.5px;
+  font-size: 15px;
 }
 
 @media (prefers-color-scheme: dark) {

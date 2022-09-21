@@ -1,6 +1,7 @@
 import Layout from "../../components/layout";
 import axios from "../../utils/axios";
 import React, { useState, useEffect } from "react";
+import Link from "next/link";
 
 function Galeri() {
   const [data, setData] = useState([]);
@@ -21,30 +22,15 @@ function Galeri() {
 
   return (
     <>
-      <div className="" style={{ backgroundColor: "#e9dffa" }}>
-        <h3 className="text-center py-5 mb-0">Galeri Kami</h3>
+      <div className="title-banner text-center container-fluid">
+        <div className="row">
+          <h3 className="title-text mb-0 mt-5 pt-5">GALERI</h3>
+        </div>
+        <div className="row">
+          <h3 className="title-subtitle mb-0 my-0 py-0">FOTO TERBARU</h3>
+        </div>
       </div>
       <div className="container py-3" style={{ backgroundColor: "white" }}>
-        {/* <div className="row text-center">
-          <div className="col-1 border rounded-pill">
-            <h6>Terbaru</h6>
-          </div>
-          <div className="col-1 border rounded-pill">
-            <h6>Wedding</h6>
-          </div>
-          <div className="col-1 border rounded-pill">
-            <h6>Personal</h6>
-          </div>
-          <div className="col-1 border rounded-pill">
-            <h6>Family</h6>
-          </div>
-          <div className="col-1 border rounded-pill">
-            <h6>Group</h6>
-          </div>
-          <div className="col-1 border rounded-pill">
-            <h6>Graduation</h6>
-          </div>
-        </div> */}
         <div className="row row-cols-4 galeri-row">
           {data.map((item) => (
             <div
@@ -59,6 +45,14 @@ function Galeri() {
             </div>
           ))}
         </div>
+        <Link href="/kontak">
+          <button
+            type="button"
+            className="btn btn-success floating-btn sticky-bottom position-fixed"
+          >
+            Hubungi Kami
+          </button>
+        </Link>
       </div>
     </>
   );
