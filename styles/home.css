@@ -4,7 +4,18 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* border-radius: 50%; */
+  /* border-radius: 50%;  */
+}
+
+.home-logo-text {
+  font-family: "Raleway", sans-serif;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  font-size: 40px;
+  font-weight: bolder;
+  background-color: whitesmoke;
+  opacity: 0.9;
+  /* background-blend-mode: darken; */
 }
 
 .home-img {
@@ -54,8 +65,18 @@
   }
 }
 
+.home-why-title {
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+
 .home-why-text {
   visibility: visible;
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+  color: rgb(122, 120, 120);
 }
 
 .home-why-icon {
@@ -84,9 +105,28 @@
   bottom: 20px;
 }
 
+.home-testimony-text {
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+  color: rgb(122, 120, 120);
+}
+
+.home-testimony-name {
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-family: "Raleway", sans-serif;
+  /* font-weight: bold; */
+}
+
 .home-service-title {
   font-family: "Raleway", sans-serif;
   line-height: 1.2;
   letter-spacing: 2.5px;
   font-size: 15px;
+}
+
+.home-faq {
+  font-family: "Raleway", sans-serif;
+
+  /* color: rgb(122, 120, 120); */
 }

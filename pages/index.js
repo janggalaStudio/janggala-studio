@@ -6,8 +6,40 @@ import Carousel from "react-bootstrap/Carousel";
 import Services from "../components/services";
 import Testimony from "../components/testimony";
 import Link from "next/link";
+import Faq from "react-faq-component";
 
 export default function Home() {
+  const config = {
+    animate: true,
+    // arrowIcon: "V",
+    openOnload: 0,
+    expandIcon: "+",
+    collapseIcon: "-",
+  };
+
+  const data = {
+    rows: [
+      {
+        title: "Lorem ipsum dolor sit amet,",
+        content: "Lorem ipsum dolor sit amet, consectetur ",
+      },
+      {
+        title: "Nunc maximus, magna at ultricies elementum",
+        content:
+          "Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam.",
+      },
+      {
+        title: "Curabitur laoreet, mauris vel blandit fringilla",
+        content:
+          "Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc",
+      },
+      {
+        title: "What is the package version",
+        content: "v1.0.5",
+      },
+    ],
+  };
+
   return (
     <div className="container-fluid p-0">
       <div className="home-logo">
@@ -17,7 +49,9 @@ export default function Home() {
           height={100}
           style={{ borderRadius: "50%" }}
         /> */}
-        <h5>Hello world</h5>
+        <h5 className="home-logo-text text-start p-3">
+          JANGGALA <br /> STUDIO.co
+        </h5>
       </div>
       <div>
         <Carousel
@@ -52,7 +86,7 @@ export default function Home() {
       </div>
       <Services />
       <div className="home-why py-5">
-        <h3 className="text-center" style={{ color: "black" }}>
+        <h3 className="text-center title-text" style={{ color: "black" }}>
           Kenapa Pilih Janggala Studio
         </h3>
         <div className="container">
@@ -151,9 +185,7 @@ export default function Home() {
         </div>
       </div>
       <div className="home-cinematic py-5">
-        <h3 className="text-center" style={{ color: "black" }}>
-          Video Cinematic
-        </h3>
+        <h3 className="text-center title-text">Video Cinematic</h3>
         <div className="container justify-content-center d-flex mt-5">
           <Carousel slide={true} indicators={false} interval={3000}>
             <Carousel.Item>
@@ -206,6 +238,21 @@ export default function Home() {
         </div>
       </div>
       <Testimony />
+      <div className="my-5 container">
+        <h3 className="text-center">FAQ</h3>
+        <div className="home-faq justify-content-center d-flex pt-3">
+          <Faq
+            data={data}
+            config={config}
+            styles={{
+              rowTitleColor: "black",
+              rowTitleTextSize: "15px",
+              rowContentColor: "rgb(122, 120, 120)",
+              rowContentTextSize: "13px",
+            }}
+          />
+        </div>
+      </div>
       <Link href="/kontak">
         <button
           type="button"
