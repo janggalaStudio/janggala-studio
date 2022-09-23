@@ -12,7 +12,7 @@ function Footer() {
             <div className="col-md-3 px-3 mb-3" style={{ color: "white" }}>
               <h3 className="footer-title">JANGGALA STUDIO</h3>
               <p className="footer-content mt-4">
-                Jl. Mangu, Keyongan, Kec. Nogosari, Kabupaten Boyolali, Jawa
+                Jl. Mangu, Keyongan, Kec. Nogosarip[-], Kabupaten Boyolali, Jawa
                 Tengah 57378
               </p>
             </div>
@@ -36,15 +36,6 @@ function Footer() {
                 </p>
               </div>
             </div>
-            {/* <div className="col px-3">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.0645551238263!2d110.74767561423893!3d-7.458110875576745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a13335200d43f%3A0x49d60cbd12d9bc8b!2sJanggalastudio!5e0!3m2!1sid!2sid!4v1663416555605!5m2!1sid!2sid"
-                allowFullScreen=""
-                className="footer-map"
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div> */}
           </div>
         </div>
       </div>

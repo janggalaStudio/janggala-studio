@@ -186,55 +186,33 @@ export default function Home() {
       </div>
       <div className="home-cinematic py-5">
         <h3 className="text-center title-text">Video Cinematic</h3>
-        <div className="container justify-content-center d-flex mt-5">
-          <Carousel slide={true} indicators={false} interval={3000}>
-            <Carousel.Item>
+        <div className="container mt-5">
+          <div className="row row-cols-3 justify-content-center d-flex">
+            <div className="col-auto">
               <iframe
                 src="https://www.youtube.com/embed/YmfUJpiJ1kM"
                 frameborder="0"
-                width="350"
-                height="300"
-                className=""
+                height="200"
+                className="w-100"
               ></iframe>
+            </div>
+            <div className="col-auto">
               <iframe
                 src="https://www.youtube.com/embed/YmfUJpiJ1kM"
                 frameborder="0"
-                width="350"
-                height="300"
-                className="mx-4"
+                height="200"
+                className="w-100"
               ></iframe>
+            </div>
+            <div className="col-auto">
               <iframe
                 src="https://www.youtube.com/embed/YmfUJpiJ1kM"
                 frameborder="0"
-                width="350"
-                height="300"
-                className=""
+                height="200"
+                className="w-100"
               ></iframe>
-            </Carousel.Item>
-            <Carousel.Item>
-              <iframe
-                src="https://www.youtube.com/embed/YmfUJpiJ1kM"
-                frameborder="0"
-                width="350"
-                height="300"
-                className=""
-              ></iframe>
-              <iframe
-                src="https://www.youtube.com/embed/YmfUJpiJ1kM"
-                frameborder="0"
-                width="350"
-                height="300"
-                className="mx-4"
-              ></iframe>
-              <iframe
-                src="https://www.youtube.com/embed/YmfUJpiJ1kM"
-                frameborder="0"
-                width="350"
-                height="300"
-                className=""
-              ></iframe>
-            </Carousel.Item>
-          </Carousel>
+            </div>
+          </div>
         </div>
       </div>
       <Testimony />

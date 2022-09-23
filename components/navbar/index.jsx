@@ -43,9 +43,6 @@ export default function NavbarMenu() {
                 <Nav.Link className="mx-1" href="/kontak">
                   KONTAK
                 </Nav.Link>
-                <Nav.Link className="ms-1" href="/aboutUs">
-                  ABOUT US
-                </Nav.Link>
               </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>
