@@ -191,7 +191,7 @@ export default function Home() {
             <div className="col-auto">
               <iframe
                 src="https://www.youtube.com/embed/YmfUJpiJ1kM"
-                frameborder="0"
+                frameBorder="0"
                 height="200"
                 className="w-100"
               ></iframe>
@@ -199,7 +199,7 @@ export default function Home() {
             <div className="col-auto">
               <iframe
                 src="https://www.youtube.com/embed/YmfUJpiJ1kM"
-                frameborder="0"
+                frameBorder="0"
                 height="200"
                 className="w-100"
               ></iframe>
@@ -207,7 +207,7 @@ export default function Home() {
             <div className="col-auto">
               <iframe
                 src="https://www.youtube.com/embed/YmfUJpiJ1kM"
-                frameborder="0"
+                frameBorder="0"
                 height="200"
                 className="w-100"
               ></iframe>

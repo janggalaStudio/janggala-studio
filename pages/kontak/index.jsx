@@ -70,5 +70,5 @@ export default function Kontak() {
 }
 
 Kontak.getLayout = function getLayout(page) {
-  return <Layout title={"Janggala Studio | Kontak"}>{page}</Layout>;
+  return <Layout title={"Kontak | Janggala Studio"}>{page}</Layout>;
 };

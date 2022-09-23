@@ -30,13 +30,25 @@ export default function NavbarMenu() {
                   <NavDropdown.Item href="/galeri">
                     Foto Terbaru
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="/">Foto Wedding</NavDropdown.Item>
-                  <NavDropdown.Item href="/">Foto Family</NavDropdown.Item>
-                  <NavDropdown.Item href="/">Foto Personal</NavDropdown.Item>
-                  <NavDropdown.Item href="/">Foto Graduation</NavDropdown.Item>
-                  <NavDropdown.Item href="/">Foto New Born</NavDropdown.Item>
-                  <NavDropdown.Item href="/">Foto Maternity</NavDropdown.Item>
-                  <NavDropdown.Item href="/">
+                  <NavDropdown.Item href="/galeri/wedding">
+                    Foto Wedding
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="/galeri/family">
+                    Foto Family
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="/galeri/personal">
+                    Foto Personal
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="/galeri/graduation">
+                    Foto Graduation
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="/galeri/new-born">
+                    Foto New Born
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="/galeri/maternity">
+                    Foto Maternity
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="/galeri/home-service">
                     Foto Home Service
                   </NavDropdown.Item>
                 </NavDropdown>

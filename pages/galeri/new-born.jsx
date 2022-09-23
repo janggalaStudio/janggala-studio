@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import FsLightbox from "fslightbox-react";
 
-function Galeri() {
+function NewBorn() {
   const [lightboxController, setLightboxController] = useState({
     toggler: false,
     slide: 1,
@@ -52,7 +52,7 @@ function Galeri() {
             <h3 className="title-text mb-0">GALERI</h3>
           </div>
           <div className="col">
-            <h3 className="title-subtitle">FOTO TERBARU</h3>
+            <h3 className="title-subtitle">FOTO NEW BORN</h3>
           </div>
         </div>
       </div>
@@ -95,8 +95,8 @@ function Galeri() {
   );
 }
 
-export default Galeri;
+export default NewBorn;
 
-Galeri.getLayout = function getLayout(page) {
-  return <Layout title={"Foto Terbaru | Janggala Studio"}>{page}</Layout>;
+NewBorn.getLayout = function getLayout(page) {
+  return <Layout title={"Foto New Born | Janggala Studio"}>{page}</Layout>;
 };

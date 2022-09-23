@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import FsLightbox from "fslightbox-react";
 
-function Galeri() {
+function HomeService() {
   const [lightboxController, setLightboxController] = useState({
     toggler: false,
     slide: 1,
@@ -52,7 +52,7 @@ function Galeri() {
             <h3 className="title-text mb-0">GALERI</h3>
           </div>
           <div className="col">
-            <h3 className="title-subtitle">FOTO TERBARU</h3>
+            <h3 className="title-subtitle">FOTO HOME SERVICE</h3>
           </div>
         </div>
       </div>
@@ -95,8 +95,8 @@ function Galeri() {
   );
 }
 
-export default Galeri;
+export default HomeService;
 
-Galeri.getLayout = function getLayout(page) {
-  return <Layout title={"Foto Terbaru | Janggala Studio"}>{page}</Layout>;
+HomeService.getLayout = function getLayout(page) {
+  return <Layout title={"Foto Home Service | Janggala Studio"}>{page}</Layout>;
 };
