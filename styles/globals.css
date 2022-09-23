@@ -97,6 +97,10 @@ a {
   cursor: pointer;
 }
 
+.spinner-container {
+  height: 20rem;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -132,7 +136,9 @@ a {
   }
 
   .title-text {
-    font-size: 25px;
+    word-break: keep-all;
+    font-size: 18px;
+    font-weight: 900 !important;
   }
 
   .title-subtitle {

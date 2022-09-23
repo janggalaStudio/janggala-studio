@@ -1,9 +1,9 @@
 .home-logo {
-  position: absolute;
-  z-index: 1;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: absolute !important;
+  z-index: 1 !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
   /* border-radius: 50%;  */
 }
 
@@ -46,36 +46,12 @@
   background-color: #f6f0ff !important;
 }
 
-@media screen and (max-width: 760px) {
-  .home-why-text {
-    visibility: hidden !important;
-  }
-  .home-why-card {
-    height: 100px !important;
-  }
-  .home-why-logo {
-    font-size: 30px;
-  }
-  .home-why-title {
-    font-size: smaller;
-  }
-  .home-why-col {
-    margin: 0px !important;
-    padding: 0px !important;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .home-testimony-col {
-    width: 300px !important;
-  }
-}
-
 .home-why-title {
   font-size: 15px;
   letter-spacing: 1px;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
+  word-break: keep-all !important;
 }
 
 .home-why-text {
@@ -96,7 +72,6 @@
 }
 
 .home-testimony {
-  /* height: 30rem; */
   background-color: #e9dffa;
 }
 
@@ -161,7 +136,48 @@
   cursor: pointer;
 }
 
+@media screen and (max-width: 760px) {
+  .home-logo-text {
+    font-size: 15px;
+  }
+  .home-logo {
+    position: absolute !important;
+    z-index: 1 !important;
+    top: 25% !important;
+    left: 50% !important;
+  }
+  .home-img {
+    height: 10rem;
+  }
+  .home-why-text {
+    visibility: hidden !important;
+  }
+  .home-why-card {
+    height: 100px !important;
+  }
+  .home-why-logo {
+    font-size: 30px;
+  }
+  .home-why-title {
+    font-size: smaller;
+  }
+  .home-why-col {
+    margin: 0px !important;
+    padding: 0px !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .home-testimony-col {
+    width: 300px !important;
+  }
+}
+
 @media screen and (max-width: 425px) {
+  .home-service-title {
+    font-size: 12px;
+  }
+
   .home-service-col {
     height: 150px;
     width: 300px !important;
@@ -182,6 +198,25 @@
 
   .home-testimony-card {
     height: 15rem !important;
+  }
+
+  .home-why-icon {
+    width: 65%;
+    height: auto;
+  }
+
+  .home-why-title {
+    font-size: 10px;
+    font-weight: bold;
+    word-break: keep-all;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .home-why-title {
+    font-size: 8px;
+    font-weight: bold;
+    word-break: keep-all;
   }
 }
 

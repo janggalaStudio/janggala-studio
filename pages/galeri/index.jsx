@@ -5,6 +5,7 @@ import Link from "next/link";
 import FsLightbox from "fslightbox-react";
 
 function Galeri() {
+  const [loading, setLoading] = useState(true);
   const [lightboxController, setLightboxController] = useState({
     toggler: false,
     slide: 1,
@@ -42,6 +43,7 @@ function Galeri() {
 
   useEffect(() => {
     light();
+    setLoading(false);
   }, [data]);
 
   return (
@@ -57,31 +59,42 @@ function Galeri() {
         </div>
       </div>
       <div className="container py-3" style={{ backgroundColor: "white" }}>
-        <div className="row row-cols-4 galeri-row">
-          {data.map((item, index) => (
+        {loading ? (
+          <div className="justify-content-center d-flex spinner-container align-items-center">
             <div
-              className="col galeri-col align-self-center px-1"
-              key={item.id}
-            >
-              <div className="overlay-container">
-                <img
-                  src={item.media_url}
-                  alt="galeri-terbaru"
-                  className="galeri-img px-0"
-                />
-                <div
-                  className="overlay"
-                  onClick={() => openLightboxOnSlide(index + 1)}
-                ></div>
+              className="spinner-border"
+              style={{ width: "3rem", height: "3rem" }}
+              role="status"
+            ></div>
+          </div>
+        ) : (
+          <div className="row row-cols-4 galeri-row">
+            {data.map((item, index) => (
+              <div
+                className="col galeri-col align-self-center px-1"
+                key={item.id}
+              >
+                <div className="overlay-container">
+                  <img
+                    src={item.media_url}
+                    alt="galeri-terbaru"
+                    className="galeri-img px-0"
+                  />
+                  <div
+                    className="overlay"
+                    onClick={() => openLightboxOnSlide(index + 1)}
+                  ></div>
+                </div>
               </div>
-            </div>
-          ))}
-          <FsLightbox
-            toggler={lightboxController.toggler}
-            sources={source}
-            slide={lightboxController.slide}
-          />
-        </div>
+            ))}
+            <FsLightbox
+              toggler={lightboxController.toggler}
+              sources={source}
+              slide={lightboxController.slide}
+            />
+          </div>
+        )}
+
         <Link href="/kontak">
           <button
             type="button"
