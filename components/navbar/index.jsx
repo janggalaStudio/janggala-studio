@@ -21,34 +21,55 @@ export default function NavbarMenu() {
           >
             <Offcanvas.Header closeButton>
               <Offcanvas.Title id="offcanvasNavbarLabel-expand-md">
-                Offcanvas
+                LOGO
               </Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="ms-auto">
                 <NavDropdown className="mx-1" title="GALERI">
-                  <NavDropdown.Item href="/galeri">
+                  <NavDropdown.Item href="/galeri" className="navbar-item">
                     Foto Terbaru
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="/galeri/wedding">
+                  <NavDropdown.Item
+                    href="/galeri/wedding"
+                    className="navbar-item"
+                  >
                     Foto Wedding
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="/galeri/family">
+                  <NavDropdown.Item
+                    href="/galeri/family"
+                    className="navbar-item"
+                  >
                     Foto Family
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="/galeri/personal">
+                  <NavDropdown.Item
+                    href="/galeri/personal"
+                    className="navbar-item"
+                  >
                     Foto Personal
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="/galeri/graduation">
+                  <NavDropdown.Item
+                    href="/galeri/graduation"
+                    className="navbar-item"
+                  >
                     Foto Graduation
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="/galeri/new-born">
+                  <NavDropdown.Item
+                    href="/galeri/new-born"
+                    className="navbar-item"
+                  >
                     Foto New Born
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="/galeri/maternity">
+                  <NavDropdown.Item
+                    href="/galeri/maternity"
+                    className="navbar-item"
+                  >
                     Foto Maternity
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="/galeri/home-service">
+                  <NavDropdown.Item
+                    href="/galeri/home-service"
+                    className="navbar-item"
+                  >
                     Foto Home Service
                   </NavDropdown.Item>
                 </NavDropdown>
