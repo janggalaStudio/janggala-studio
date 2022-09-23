@@ -162,7 +162,7 @@
 }
 
 @media screen and (max-width: 425px) {
-  .home-logo-text {
+  /* .home-logo-text {
     font-size: 15px;
   }
 
@@ -175,7 +175,7 @@
 
   .home-img {
     height: 10rem;
-  }
+  } */
 
   .home-service-title {
     font-size: 12px;
