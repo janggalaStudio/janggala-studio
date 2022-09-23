@@ -137,18 +137,6 @@
 }
 
 @media screen and (max-width: 760px) {
-  .home-logo-text {
-    font-size: 15px;
-  }
-  .home-logo {
-    position: absolute !important;
-    z-index: 1 !important;
-    top: 20% !important;
-    left: 50% !important;
-  }
-  .home-img {
-    height: 10rem;
-  }
   .home-why-text {
     visibility: hidden !important;
   }
@@ -174,6 +162,21 @@
 }
 
 @media screen and (max-width: 425px) {
+  .home-logo-text {
+    font-size: 15px;
+  }
+
+  .home-logo {
+    position: absolute !important;
+    z-index: 1 !important;
+    top: 22% !important;
+    left: 50% !important;
+  }
+
+  .home-img {
+    height: 10rem;
+  }
+
   .home-service-title {
     font-size: 12px;
   }
