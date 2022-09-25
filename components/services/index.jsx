@@ -6,7 +6,7 @@ function Services() {
     <div className="home-services my-5 container">
       <h3 className="text-center title-text">Janggala Studio</h3>
       <div className="row row-cols-4 g-3 mt-5 p-0 justify-content-center">
-        <div className="col home-service-col">
+        <div className="col mb-2 home-service-col">
           <Link
             href="/galeri/family"
             className="stretched-link home-card-title"
@@ -29,7 +29,7 @@ function Services() {
             </div>
           </Link>
         </div>
-        <div className="col home-service-col">
+        <div className="col mb-2 home-service-col">
           <Link
             href="/galeri/wedding"
             className="stretched-link home-card-title"
@@ -52,7 +52,7 @@ function Services() {
             </div>
           </Link>
         </div>
-        <div className="col home-service-col">
+        <div className="col mb-2 home-service-col">
           <Link
             href="/galeri/prewedding"
             className="stretched-link home-card-title"
@@ -75,7 +75,7 @@ function Services() {
             </div>
           </Link>
         </div>
-        <div className="col home-service-col">
+        <div className="col mb-2 home-service-col">
           <Link
             href="/galeri/engagement"
             className="stretched-link home-card-title"
@@ -98,7 +98,7 @@ function Services() {
             </div>
           </Link>
         </div>
-        <div className="col home-service-col">
+        <div className="col mb-2 home-service-col">
           <Link
             href="/galeri/graduation"
             className="stretched-link home-card-title"
@@ -121,7 +121,7 @@ function Services() {
             </div>
           </Link>
         </div>
-        <div className="col home-service-col">
+        <div className="col mb-2 home-service-col">
           <Link
             href="/galeri/new-born"
             className="stretched-link home-card-title"
@@ -144,7 +144,7 @@ function Services() {
             </div>
           </Link>
         </div>
-        <div className="col home-service-col">
+        <div className="col mb-2 home-service-col">
           <Link
             href="/galeri/home-service"
             className="stretched-link home-card-title"
@@ -167,7 +167,7 @@ function Services() {
             </div>
           </Link>
         </div>
-        <div className="col home-service-col">
+        <div className="col mb-2 home-service-col">
           <Link
             href="/galeri/maternity"
             className="stretched-link home-card-title"

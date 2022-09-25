@@ -172,7 +172,7 @@ export default function Home() {
             <div className="row row-cols-3 justify-content-center d-flex">
               <div className="col-auto">
                 <iframe
-                  src="https://www.youtube.com/embed/YmfUJpiJ1kM"
+                  src="https://www.instagram.com/p/CT6xoFAp4v6/?utm_source=ig_web_copy_link"
                   frameBorder="0"
                   height="200"
                   className="w-100"

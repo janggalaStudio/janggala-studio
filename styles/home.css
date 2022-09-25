@@ -187,12 +187,12 @@
   }
 
   .overlay-service {
-    height: 100px;
+    height: 120px;
     bottom: 54px;
   }
 
   .home-service-img {
-    height: 100px;
+    height: 120px;
     object-fit: cover;
   }
 
