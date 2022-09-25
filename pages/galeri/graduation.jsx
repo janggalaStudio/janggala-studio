@@ -45,7 +45,7 @@ function Graduation() {
               <div className="overlay-container">
                 <img
                   src={`/assets/graduation/graduation${index + 1}.jpg`}
-                  alt="galeri-terbaru"
+                  alt="galeri-graduation"
                   className="galeri-img px-0"
                 />
                 <div

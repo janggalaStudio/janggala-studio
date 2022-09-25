@@ -9,17 +9,6 @@ function Family() {
     toggler: false,
     slide: 1,
   });
-  const [source, setSource] = useState([]);
-
-  const [data, setData] = useState([]);
-  const instagram = async () => {
-    try {
-      const result = await axios.get();
-      setData(result.data.data);
-    } catch (error) {
-      console.log(error);
-    }
-  };
 
   function openLightboxOnSlide(number) {
     setLightboxController({
@@ -28,21 +17,13 @@ function Family() {
     });
   }
 
-  const light = () => {
-    if (source.length == 0) {
-      data.map((item) => {
-        source.push(item.media_url);
-      });
-    }
-  };
-
-  useEffect(() => {
-    instagram();
-  }, []);
-
-  useEffect(() => {
-    light();
-  }, [data]);
+  const source = [
+    "/assets/family/family1.jpg",
+    "/assets/family/family2.jpg",
+    "/assets/family/family3.jpg",
+    "/assets/family/family4.jpg",
+    "/assets/family/family5.jpg",
+  ];
 
   return (
     <>
@@ -58,14 +39,11 @@ function Family() {
       </div>
       <div className="container py-3" style={{ backgroundColor: "white" }}>
         <div className="row row-cols-4 galeri-row">
-          {data.map((item, index) => (
-            <div
-              className="col galeri-col align-self-center px-1"
-              key={item.id}
-            >
+          {source.map((item, index) => (
+            <div className="col galeri-col align-self-center px-1">
               <div className="overlay-container">
                 <img
-                  src={item.media_url}
+                  src={`/assets/family/family${index + 1}.jpg`}
                   alt="galeri-terbaru"
                   className="galeri-img px-0"
                 />
