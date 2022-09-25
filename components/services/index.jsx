@@ -54,7 +54,7 @@ function Services() {
         </div>
         <div className="col home-service-col">
           <Link
-            href="/galeri/personal"
+            href="/galeri/prewedding"
             className="stretched-link home-card-title"
           >
             <div className="card rounded-0 border-0 overlay-container">
