@@ -44,7 +44,7 @@ function Wedding() {
           </div>
         </div>
       </div>
-      <div className="container py-3" style={{ backgroundColor: "white" }}>
+      <div className="container pb-2" style={{ backgroundColor: "white" }}>
         <div className="row row-cols-4 galeri-row">
           {source.map((item, index) => (
             <div className="col galeri-col align-self-center px-1">

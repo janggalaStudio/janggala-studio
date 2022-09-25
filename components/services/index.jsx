@@ -76,11 +76,14 @@ function Services() {
           </Link>
         </div>
         <div className="col home-service-col">
-          <Link href="/galeri/group" className="stretched-link home-card-title">
+          <Link
+            href="/galeri/engagement"
+            className="stretched-link home-card-title"
+          >
             <div className="card rounded-0 border-0 overlay-container">
               <img
-                src="https://images.pexels.com/photos/1963622/pexels-photo-1963622.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                alt="group-img"
+                src="/assets/engagement/engagement6.jpg"
+                alt="engagement-img"
                 className="card-img rounded-0 home-service-img"
               />
               <div className="card-body d-flex align-items-end justify-content-center">
@@ -88,7 +91,7 @@ function Services() {
                   className="card-title home-service-title"
                   style={{ color: "black" }}
                 >
-                  Group
+                  Engagement
                 </h5>
               </div>
               <div className="overlay-service"></div>

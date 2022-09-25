@@ -4,23 +4,11 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import FsLightbox from "fslightbox-react";
 
-function Group() {
+function Engagement() {
   const [lightboxController, setLightboxController] = useState({
     toggler: false,
     slide: 1,
   });
-  const [source, setSource] = useState([]);
-
-  const [data, setData] = useState([]);
-  const instagram = async () => {
-    try {
-      const result = await axios.get();
-      setData(result.data.data);
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
   function openLightboxOnSlide(number) {
     setLightboxController({
       toggler: !lightboxController.toggler,
@@ -28,21 +16,20 @@ function Group() {
     });
   }
 
-  const light = () => {
-    if (source.length == 0) {
-      data.map((item) => {
-        source.push(item.media_url);
-      });
-    }
-  };
-
-  useEffect(() => {
-    instagram();
-  }, []);
-
-  useEffect(() => {
-    light();
-  }, [data]);
+  const source = [
+    "/assets/engagement/engagement1.jpg",
+    "/assets/engagement/engagement2.jpg",
+    "/assets/engagement/engagement3.jpg",
+    "/assets/engagement/engagement4.jpg",
+    "/assets/engagement/engagement5.jpg",
+    "/assets/engagement/engagement6.jpg",
+    "/assets/engagement/engagement7.jpg",
+    "/assets/engagement/engagement8.jpg",
+    "/assets/engagement/engagement9.jpg",
+    "/assets/engagement/engagement10.jpg",
+    "/assets/engagement/engagement11.jpg",
+    "/assets/engagement/engagement12.jpg",
+  ];
 
   return (
     <>
@@ -52,20 +39,17 @@ function Group() {
             <h3 className="title-text mb-0">GALERI</h3>
           </div>
           <div className="col">
-            <h3 className="title-subtitle">FOTO GROUP</h3>
+            <h3 className="title-subtitle">FOTO ENGAGEMENT</h3>
           </div>
         </div>
       </div>
-      <div className="container py-3" style={{ backgroundColor: "white" }}>
+      <div className="container pb-2" style={{ backgroundColor: "white" }}>
         <div className="row row-cols-4 galeri-row">
-          {data.map((item, index) => (
-            <div
-              className="col galeri-col align-self-center px-1"
-              key={item.id}
-            >
+          {source.map((item, index) => (
+            <div className="col galeri-col align-self-center px-1">
               <div className="overlay-container">
                 <img
-                  src={item.media_url}
+                  src={`/assets/engagement/engagement${index + 1}.jpg`}
                   alt="galeri-terbaru"
                   className="galeri-img px-0"
                 />
@@ -95,8 +79,8 @@ function Group() {
   );
 }
 
-export default Group;
+export default Engagement;
 
-Group.getLayout = function getLayout(page) {
-  return <Layout title={"Foto Group | Janggala Studio"}>{page}</Layout>;
+Engagement.getLayout = function getLayout(page) {
+  return <Layout title={"Foto Engagement | Janggala Studio"}>{page}</Layout>;
 };
