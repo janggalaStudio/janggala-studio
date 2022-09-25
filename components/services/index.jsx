@@ -36,7 +36,7 @@ function Services() {
           >
             <div className="card rounded-0 border-0 overlay-container">
               <img
-                src="https://images.pexels.com/photos/265722/pexels-photo-265722.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                src="https://drive.google.com/file/d/1q7gSyMokPJU2gF2Xgxz8gKzh7TPjlC3b/view"
                 className="card-img rounded-0 home-service-img"
                 alt="wedding-img "
               />
