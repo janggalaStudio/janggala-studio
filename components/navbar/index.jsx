@@ -5,13 +5,34 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Container from "react-bootstrap/Container";
 import Offcanvas from "react-bootstrap/Offcanvas";
+import Image from "next/image";
 
 export default function NavbarMenu() {
   return (
     <>
-      <Navbar sticky="top" expand="md" className="navbar-style">
+      <Navbar
+        sticky="top"
+        expand="md"
+        className="navbar-style"
+        variant="dark"
+        bg="dark"
+        // style={{backgroundColor: 'black'}}
+      >
         <Container>
-          <Navbar.Brand href="/">LOGO</Navbar.Brand>
+          <Navbar.Brand href="/">
+            {/* <Image
+              src="/assets/logo/janggala_transparan1.png"
+              alt="Logo.img"
+              width={40}
+              height={30}
+              style={{ objectFit: "fill" }}
+            /> */}
+            <img
+              src="/assets/logo/janggala_transparan1.png"
+              alt="Logo.img"
+              style={{ objectFit: "fill", width: "40px", height: "auto" }}
+            />
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="offcanvasNavbar-expand-md" />
           <Navbar.Offcanvas
             id="offcanvasNavbar-expand-md"
@@ -21,12 +42,20 @@ export default function NavbarMenu() {
           >
             <Offcanvas.Header closeButton>
               <Offcanvas.Title id="offcanvasNavbarLabel-expand-md">
-                LOGO
+                <img
+                  src="/assets/logo/janggala_transparan1.png"
+                  alt="Logo.img"
+                  style={{ objectFit: "fill", width: "40px", height: "auto" }}
+                />
               </Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="ms-auto">
-                <NavDropdown className="mx-1" title="GALERI">
+                <NavDropdown
+                  className="mx-1"
+                  title="GALERI"
+                  // style={{ color: "white" }}
+                >
                   <NavDropdown.Item href="/galeri" className="navbar-item">
                     Foto Terbaru
                   </NavDropdown.Item>

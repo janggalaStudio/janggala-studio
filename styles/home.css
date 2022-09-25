@@ -116,7 +116,7 @@
 }
 
 .overlay-service {
-  bottom: 54px;
+  bottom: 58px;
   position: absolute;
   height: 200px;
   background: rgb(0, 0, 0);
@@ -188,6 +188,7 @@
 
   .overlay-service {
     height: 100px;
+    bottom: 54px;
   }
 
   .home-service-img {

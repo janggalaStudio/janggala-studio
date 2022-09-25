@@ -15,6 +15,15 @@
   color: rgb(122, 120, 120);
 }
 
-.navbar-item:active {
-  background-color: rgb(102, 101, 101) !important;
+.nav-item .dropdown-menu {
+  background: #000000;
+}
+
+.nav-item .dropdown-item {
+  color: #ffffff;
+}
+
+.nav-item .dropdown-item:active {
+  background: rgb(102, 101, 101);
+  color: #ffffff;
 }

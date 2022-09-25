@@ -6,6 +6,7 @@ import Testimony from "../components/testimony";
 import Link from "next/link";
 import Faq from "react-faq-component";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function Home() {
   const config = {
@@ -41,16 +42,17 @@ export default function Home() {
   return (
     <>
       <div className="container-fluid p-0">
-        <div className="home-logo">
-          {/* <Image
-            src="/assets/logo.jpg"
-            width={100}
-            height={100}
-            style={{ borderRadius: "50%" }}
-          /> */}
-          <h5 className="home-logo-text text-start p-3">
+        <div className="home-logo justify-content-center d-flex">
+          <Image
+            src="/assets/logo/Janggala_transparan.png"
+            // className="w-75"
+            width={400}
+            height={266}
+            // style={{ borderRadius: "50%" }}
+          />
+          {/* <h5 className="home-logo-text text-start p-3">
             JANGGALA <br /> STUDIO.co
-          </h5>
+          </h5> */}
         </div>
         <div>
           <Carousel
