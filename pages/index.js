@@ -63,7 +63,7 @@ export default function Home() {
           >
             <Carousel.Item>
               <img
-                src="/assets/prewedding/prewedding16.jpg"
+                src="/assets/engagement/engagement11.jpg"
                 className="home-img d-block"
                 alt="Studio Jenggala"
               />

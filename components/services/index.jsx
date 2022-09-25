@@ -82,7 +82,7 @@ function Services() {
           >
             <div className="card rounded-0 border-0 overlay-container">
               <img
-                src="/assets/engagement/engagement6.jpg"
+                src="/assets/engagement/engagement4.jpg"
                 alt="engagement-img"
                 className="card-img rounded-0 home-service-img"
               />
@@ -105,7 +105,7 @@ function Services() {
           >
             <div className="card rounded-0 border-0 overlay-container">
               <img
-                src="https://images.pexels.com/photos/901964/pexels-photo-901964.jpeg?auto=compress&cs=tinysrgb&w=600"
+                src="/assets/graduation/graduation6.jpg"
                 className="card-img rounded-0 home-service-img"
                 alt="graduation-img"
               />

@@ -9,17 +9,6 @@ function Graduation() {
     toggler: false,
     slide: 1,
   });
-  const [source, setSource] = useState([]);
-
-  const [data, setData] = useState([]);
-  const instagram = async () => {
-    try {
-      const result = await axios.get();
-      setData(result.data.data);
-    } catch (error) {
-      console.log(error);
-    }
-  };
 
   function openLightboxOnSlide(number) {
     setLightboxController({
@@ -28,21 +17,14 @@ function Graduation() {
     });
   }
 
-  const light = () => {
-    if (source.length == 0) {
-      data.map((item) => {
-        source.push(item.media_url);
-      });
-    }
-  };
-
-  useEffect(() => {
-    instagram();
-  }, []);
-
-  useEffect(() => {
-    light();
-  }, [data]);
+  const source = [
+    "/assets/graduation/graduation1.jpg",
+    "/assets/graduation/graduation2.jpg",
+    "/assets/graduation/graduation3.jpg",
+    "/assets/graduation/graduation4.jpg",
+    "/assets/graduation/graduation5.jpg",
+    "/assets/graduation/graduation6.jpg",
+  ];
 
   return (
     <>
@@ -56,16 +38,13 @@ function Graduation() {
           </div>
         </div>
       </div>
-      <div className="container py-3" style={{ backgroundColor: "white" }}>
+      <div className="container pb-2" style={{ backgroundColor: "white" }}>
         <div className="row row-cols-4 galeri-row">
-          {data.map((item, index) => (
-            <div
-              className="col galeri-col align-self-center px-1"
-              key={item.id}
-            >
+          {source.map((item, index) => (
+            <div className="col galeri-col align-self-center px-1">
               <div className="overlay-container">
                 <img
-                  src={item.media_url}
+                  src={`/assets/graduation/graduation${index + 1}.jpg`}
                   alt="galeri-terbaru"
                   className="galeri-img px-0"
                 />
