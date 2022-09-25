@@ -3,23 +3,27 @@ import axios from "../../utils/axios";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import FsLightbox from "fslightbox-react";
+import Image from "next/image";
 
 function Wedding() {
   const [lightboxController, setLightboxController] = useState({
     toggler: false,
     slide: 1,
   });
-  const [source, setSource] = useState([]);
 
-  const [data, setData] = useState([]);
-  const instagram = async () => {
-    try {
-      const result = await axios.get();
-      setData(result.data.data);
-    } catch (error) {
-      console.log(error);
-    }
-  };
+  const source = [
+    "/assets/wedding/wedding1.jpg",
+    "/assets/wedding/wedding2.jpg",
+    "/assets/wedding/wedding3.jpg",
+    "/assets/wedding/wedding4.jpg",
+    "/assets/wedding/wedding5.jpg",
+    "/assets/wedding/wedding6.jpg",
+    "/assets/wedding/wedding7.jpg",
+    "/assets/wedding/wedding8.jpg",
+    "/assets/wedding/wedding9.jpg",
+    "/assets/wedding/wedding10.jpg",
+    "/assets/wedding/wedding11.jpg",
+  ];
 
   function openLightboxOnSlide(number) {
     setLightboxController({
@@ -27,22 +31,6 @@ function Wedding() {
       slide: number,
     });
   }
-
-  const light = () => {
-    if (source.length == 0) {
-      data.map((item) => {
-        source.push(item.media_url);
-      });
-    }
-  };
-
-  useEffect(() => {
-    instagram();
-  }, []);
-
-  useEffect(() => {
-    light();
-  }, [data]);
 
   return (
     <>
@@ -58,15 +46,12 @@ function Wedding() {
       </div>
       <div className="container py-3" style={{ backgroundColor: "white" }}>
         <div className="row row-cols-4 galeri-row">
-          {data.map((item, index) => (
-            <div
-              className="col galeri-col align-self-center px-1"
-              key={item.id}
-            >
+          {source.map((item, index) => (
+            <div className="col galeri-col align-self-center px-1">
               <div className="overlay-container">
                 <img
-                  src={item.media_url}
-                  alt="galeri-terbaru"
+                  src={`/assets/wedding/wedding${index + 1}.jpg`}
+                  alt="galeri-wedding"
                   className="galeri-img px-0"
                 />
                 <div
@@ -76,6 +61,7 @@ function Wedding() {
               </div>
             </div>
           ))}
+
           <FsLightbox
             toggler={lightboxController.toggler}
             sources={source}

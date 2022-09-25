@@ -4,22 +4,11 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import FsLightbox from "fslightbox-react";
 
-function Personal() {
+function Prewedding() {
   const [lightboxController, setLightboxController] = useState({
     toggler: false,
     slide: 1,
   });
-  const [source, setSource] = useState([]);
-
-  const [data, setData] = useState([]);
-  const instagram = async () => {
-    try {
-      const result = await axios.get();
-      setData(result.data.data);
-    } catch (error) {
-      console.log(error);
-    }
-  };
 
   function openLightboxOnSlide(number) {
     setLightboxController({
@@ -28,21 +17,29 @@ function Personal() {
     });
   }
 
-  const light = () => {
-    if (source.length == 0) {
-      data.map((item) => {
-        source.push(item.media_url);
-      });
-    }
-  };
-
-  useEffect(() => {
-    instagram();
-  }, []);
-
-  useEffect(() => {
-    light();
-  }, [data]);
+  const source = [
+    "/assets/prewedding/prewedding1.jpg",
+    "/assets/prewedding/prewedding2.jpg",
+    "/assets/prewedding/prewedding3.jpg",
+    "/assets/prewedding/prewedding4.jpg",
+    "/assets/prewedding/prewedding5.jpg",
+    "/assets/prewedding/prewedding6.jpg",
+    "/assets/prewedding/prewedding7.jpg",
+    "/assets/prewedding/prewedding8.jpg",
+    "/assets/prewedding/prewedding9.jpg",
+    "/assets/prewedding/prewedding10.jpg",
+    "/assets/prewedding/prewedding11.jpg",
+    "/assets/prewedding/prewedding12.jpg",
+    "/assets/prewedding/prewedding13.jpg",
+    "/assets/prewedding/prewedding14.jpg",
+    "/assets/prewedding/prewedding15.jpg",
+    "/assets/prewedding/prewedding16.jpg",
+    "/assets/prewedding/prewedding17.jpg",
+    "/assets/prewedding/prewedding18.jpg",
+    "/assets/prewedding/prewedding19.jpg",
+    "/assets/prewedding/prewedding20.jpg",
+    "/assets/prewedding/prewedding21.jpg",
+  ];
 
   return (
     <>
@@ -52,21 +49,18 @@ function Personal() {
             <h3 className="title-text mb-0">GALERI</h3>
           </div>
           <div className="col">
-            <h3 className="title-subtitle">FOTO PERSONAL</h3>
+            <h3 className="title-subtitle">FOTO PREWEDDING</h3>
           </div>
         </div>
       </div>
       <div className="container py-3" style={{ backgroundColor: "white" }}>
         <div className="row row-cols-4 galeri-row">
-          {data.map((item, index) => (
-            <div
-              className="col galeri-col align-self-center px-1"
-              key={item.id}
-            >
+          {source.map((item, index) => (
+            <div className="col galeri-col align-self-center px-1">
               <div className="overlay-container">
                 <img
-                  src={item.media_url}
-                  alt="galeri-terbaru"
+                  src={`/assets/prewedding/prewedding${index + 1}.jpg`}
+                  alt="galeri-prewedding"
                   className="galeri-img px-0"
                 />
                 <div
@@ -95,8 +89,8 @@ function Personal() {
   );
 }
 
-export default Personal;
+export default Prewedding;
 
-Personal.getLayout = function getLayout(page) {
-  return <Layout title={"Foto Personal | Janggala Studio"}>{page}</Layout>;
+Prewedding.getLayout = function getLayout(page) {
+  return <Layout title={"Foto Prewedding | Janggala Studio"}>{page}</Layout>;
 };

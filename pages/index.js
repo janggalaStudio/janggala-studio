@@ -51,7 +51,6 @@ export default function Home() {
             // style={{ borderRadius: "50%" }}
           />
           {/* <h5 className="home-logo-text text-start p-3">
-            JANGGALA <br /> STUDIO.co
           </h5> */}
         </div>
         <div>
@@ -64,7 +63,7 @@ export default function Home() {
           >
             <Carousel.Item>
               <img
-                src="/assets/bg-1.jpg"
+                src="/assets/prewedding/prewedding16.jpg"
                 className="home-img d-block"
                 alt="Studio Jenggala"
               />

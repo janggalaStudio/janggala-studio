@@ -36,7 +36,7 @@ function Services() {
           >
             <div className="card rounded-0 border-0 overlay-container">
               <img
-                src="https://drive.google.com/file/d/1q7gSyMokPJU2gF2Xgxz8gKzh7TPjlC3b/view"
+                src="/assets/wedding/wedding6.jpg"
                 className="card-img rounded-0 home-service-img"
                 alt="wedding-img "
               />
@@ -59,16 +59,16 @@ function Services() {
           >
             <div className="card rounded-0 border-0 overlay-container">
               <img
-                src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=600"
+                src="/assets/prewedding/prewedding21.jpg"
                 className="card-img rounded-0 home-service-img"
-                alt="personal-img "
+                alt="prewedding-img "
               />
               <div className="card-body d-flex align-items-end justify-content-center">
                 <h5
                   className="card-title home-service-title"
                   style={{ color: "black" }}
                 >
-                  Personal
+                  Prewedding
                 </h5>
               </div>
               <div className="overlay-service"></div>
