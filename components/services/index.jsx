@@ -13,7 +13,7 @@ function Services() {
           >
             <div className="card rounded-0 border-0 overlay-container">
               <img
-                src="/assets/family/family3.jpg"
+                src="/assets/thumbnail/family.jpg"
                 className="card-img rounded-0 home-service-img"
                 alt="family-img "
               />
@@ -36,7 +36,7 @@ function Services() {
           >
             <div className="card rounded-0 border-0 overlay-container">
               <img
-                src="/assets/wedding/wedding6.jpg"
+                src="/assets/thumbnail/wedding.jpg"
                 className="card-img rounded-0 home-service-img"
                 alt="wedding-img "
               />
@@ -59,7 +59,7 @@ function Services() {
           >
             <div className="card rounded-0 border-0 overlay-container">
               <img
-                src="/assets/prewedding/prewedding21.jpg"
+                src="/assets/thumbnail/prewedding.jpg"
                 className="card-img rounded-0 home-service-img"
                 alt="prewedding-img "
               />
@@ -82,7 +82,7 @@ function Services() {
           >
             <div className="card rounded-0 border-0 overlay-container">
               <img
-                src="/assets/engagement/engagement4.jpg"
+                src="/assets/thumbnail/engagement.jpg"
                 alt="engagement-img"
                 className="card-img rounded-0 home-service-img"
               />
@@ -105,7 +105,7 @@ function Services() {
           >
             <div className="card rounded-0 border-0 overlay-container">
               <img
-                src="/assets/graduation/graduation6.jpg"
+                src="/assets/thumbnail/graduation.jpg"
                 className="card-img rounded-0 home-service-img"
                 alt="graduation-img"
               />
@@ -128,7 +128,7 @@ function Services() {
           >
             <div className="card rounded-0 border-0 overlay-container">
               <img
-                src="/assets/maternity/maternity3.jpg"
+                src="/assets/thumbnail/maternity.jpg"
                 className="card-img rounded-0 home-service-img"
                 alt="maternity-img"
               />
@@ -151,7 +151,7 @@ function Services() {
           >
             <div className="card rounded-0 border-0 overlay-container">
               <img
-                src="/assets/new_born/new_born5.jpg"
+                src="/assets/thumbnail/new_born.jpg"
                 className="card-img rounded-0 home-service-img"
                 alt="new-born-img"
               />
@@ -171,7 +171,7 @@ function Services() {
           <Link href="/galeri/group" className="stretched-link home-card-title">
             <div className="card rounded-0 border-0 overlay-container">
               <img
-                src="/assets/group/group4.jpg"
+                src="/assets/thumbnail/group.jpg"
                 className="card-img rounded-0 home-service-img"
                 alt="group-img"
               />

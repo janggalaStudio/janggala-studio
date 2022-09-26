@@ -45,13 +45,9 @@ export default function Home() {
         <div className="home-logo justify-content-center d-flex">
           <Image
             src="/assets/logo/Janggala_transparan.png"
-            // className="w-75"
             width={400}
             height={266}
-            // style={{ borderRadius: "50%" }}
           />
-          {/* <h5 className="home-logo-text text-start p-3">
-          </h5> */}
         </div>
         <div>
           <Carousel
@@ -63,21 +59,21 @@ export default function Home() {
           >
             <Carousel.Item>
               <img
-                src="/assets/engagement/engagement11.jpg"
+                src="/assets/banner/banner1.jpg"
                 className="home-img d-block"
                 alt="Studio Jenggala"
               />
             </Carousel.Item>
             <Carousel.Item>
               <img
-                src="/assets/wedding/wedding10.jpg"
+                src="/assets/banner/banner2.jpg"
                 className="d-block home-img"
                 alt="Studio Jenggala"
               />
             </Carousel.Item>
             <Carousel.Item>
               <img
-                src="/assets/new_born/new_born2.jpg"
+                src="/assets/banner/banner3.jpg"
                 className="d-block home-img"
                 alt="Studio Jenggala"
               />

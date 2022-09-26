@@ -19,7 +19,7 @@ function Testimony() {
               <div className="row home-testimony-user align-items-center">
                 <div className="col">
                   <img
-                    src="https://lh3.googleusercontent.com/a-/ACNPEu93h4mCWP1GHeFGGVI-1A_UhiRoaR9XIFLBGSxFTw=w60-h60-p-rp-mo-br100"
+                    src="/assets/testimony/testimony1.png"
                     alt=""
                     className="home-testimony-img rounded-circle"
                   />
@@ -46,7 +46,7 @@ function Testimony() {
               <div className="row home-testimony-user align-items-center">
                 <div className="col">
                   <img
-                    src="/assets/logo.jpg"
+                    src="/assets/testimony/testimony2.png"
                     alt=""
                     className="home-testimony-img rounded-circle"
                   />
@@ -75,7 +75,7 @@ function Testimony() {
               <div className="row home-testimony-user align-items-center">
                 <div className="col">
                   <img
-                    src="/assets/logo.jpg"
+                    src="/assets/testimony/testimony3.png"
                     alt=""
                     className="home-testimony-img rounded-circle"
                   />
