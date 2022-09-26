@@ -44,7 +44,7 @@ function Family() {
               <div className="overlay-container">
                 <img
                   src={`/assets/family/family${index + 1}.jpg`}
-                  alt="galeri-terbaru"
+                  alt="galeri-family"
                   className="galeri-img px-0"
                 />
                 <div

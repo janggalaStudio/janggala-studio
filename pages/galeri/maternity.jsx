@@ -9,17 +9,6 @@ function Maternity() {
     toggler: false,
     slide: 1,
   });
-  const [source, setSource] = useState([]);
-
-  const [data, setData] = useState([]);
-  const instagram = async () => {
-    try {
-      const result = await axios.get();
-      setData(result.data.data);
-    } catch (error) {
-      console.log(error);
-    }
-  };
 
   function openLightboxOnSlide(number) {
     setLightboxController({
@@ -28,21 +17,11 @@ function Maternity() {
     });
   }
 
-  const light = () => {
-    if (source.length == 0) {
-      data.map((item) => {
-        source.push(item.media_url);
-      });
-    }
-  };
-
-  useEffect(() => {
-    instagram();
-  }, []);
-
-  useEffect(() => {
-    light();
-  }, [data]);
+  const source = [
+    "/assets/maternity/maternity1.jpg",
+    "/assets/maternity/maternity2.jpg",
+    "/assets/maternity/maternity3.jpg",
+  ];
 
   return (
     <>
@@ -56,17 +35,14 @@ function Maternity() {
           </div>
         </div>
       </div>
-      <div className="container py-3" style={{ backgroundColor: "white" }}>
+      <div className="container pb-2" style={{ backgroundColor: "white" }}>
         <div className="row row-cols-4 galeri-row">
-          {data.map((item, index) => (
-            <div
-              className="col galeri-col align-self-center px-1"
-              key={item.id}
-            >
+          {source.map((item, index) => (
+            <div className="col galeri-col align-self-center px-1">
               <div className="overlay-container">
                 <img
-                  src={item.media_url}
-                  alt="galeri-terbaru"
+                  src={`/assets/maternity/maternity${index + 1}.jpg`}
+                  alt="galeri-maternity"
                   className="galeri-img px-0"
                 />
                 <div

@@ -123,6 +123,29 @@ function Services() {
         </div>
         <div className="col mb-2 home-service-col">
           <Link
+            href="/galeri/maternity"
+            className="stretched-link home-card-title"
+          >
+            <div className="card rounded-0 border-0 overlay-container">
+              <img
+                src="/assets/maternity/maternity3.jpg"
+                className="card-img rounded-0 home-service-img"
+                alt="maternity-img"
+              />
+              <div className="card-body d-flex align-items-end justify-content-center">
+                <h5
+                  className="card-title home-service-title"
+                  style={{ color: "black" }}
+                >
+                  Maternity
+                </h5>
+              </div>
+              <div className="overlay-service"></div>
+            </div>
+          </Link>
+        </div>
+        <div className="col mb-2 home-service-col">
+          <Link
             href="/galeri/new-born"
             className="stretched-link home-card-title"
           >
@@ -145,45 +168,19 @@ function Services() {
           </Link>
         </div>
         <div className="col mb-2 home-service-col">
-          <Link
-            href="/galeri/home-service"
-            className="stretched-link home-card-title"
-          >
+          <Link href="/galeri/group" className="stretched-link home-card-title">
             <div className="card rounded-0 border-0 overlay-container">
               <img
                 src="/assets/logo.jpg"
                 className="card-img rounded-0 home-service-img"
-                alt="home-img"
+                alt="group-img"
               />
               <div className="card-body d-flex align-items-end justify-content-center">
                 <h5
                   className="card-title home-service-title"
                   style={{ color: "black" }}
                 >
-                  Home Service
-                </h5>
-              </div>
-              <div className="overlay-service"></div>
-            </div>
-          </Link>
-        </div>
-        <div className="col mb-2 home-service-col">
-          <Link
-            href="/galeri/maternity"
-            className="stretched-link home-card-title"
-          >
-            <div className="card rounded-0 border-0 overlay-container">
-              <img
-                src="/assets/logo.jpg"
-                className="card-img rounded-0 home-service-img"
-                alt="maternity-img"
-              />
-              <div className="card-body d-flex align-items-end justify-content-center">
-                <h5
-                  className="card-title home-service-title"
-                  style={{ color: "black" }}
-                >
-                  Maternity
+                  Group
                 </h5>
               </div>
               <div className="overlay-service"></div>
