@@ -12,7 +12,7 @@ function Footer() {
             <div className="col-md-3 px-3 mb-3" style={{ color: "white" }}>
               <h3 className="footer-title">JANGGALA STUDIO</h3>
               <p className="footer-content mt-4">
-                Jl. Mangu, Keyongan, Kec. Nogosarip[-], Kabupaten Boyolali, Jawa
+                Jl. Mangu, Keyongan, Kec. Nogosari, Kabupaten Boyolali, Jawa
                 Tengah 57378
               </p>
             </div>

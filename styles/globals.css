@@ -55,7 +55,7 @@ a {
 
 .title-banner {
   height: 15rem;
-  background-image: url("/assets/bg-3.jpg");
+  background-image: url("/assets/gray_texture.jpg");
   object-fit: cover;
 }
 
