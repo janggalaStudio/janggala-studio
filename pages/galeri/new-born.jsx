@@ -9,17 +9,6 @@ function NewBorn() {
     toggler: false,
     slide: 1,
   });
-  const [source, setSource] = useState([]);
-
-  const [data, setData] = useState([]);
-  const instagram = async () => {
-    try {
-      const result = await axios.get();
-      setData(result.data.data);
-    } catch (error) {
-      console.log(error);
-    }
-  };
 
   function openLightboxOnSlide(number) {
     setLightboxController({
@@ -28,21 +17,13 @@ function NewBorn() {
     });
   }
 
-  const light = () => {
-    if (source.length == 0) {
-      data.map((item) => {
-        source.push(item.media_url);
-      });
-    }
-  };
-
-  useEffect(() => {
-    instagram();
-  }, []);
-
-  useEffect(() => {
-    light();
-  }, [data]);
+  const source = [
+    "/assets/new_born/new_born1.jpg",
+    "/assets/new_born/new_born2.jpg",
+    "/assets/new_born/new_born3.jpg",
+    "/assets/new_born/new_born4.jpg",
+    "/assets/new_born/new_born5.jpg",
+  ];
 
   return (
     <>
@@ -56,16 +37,13 @@ function NewBorn() {
           </div>
         </div>
       </div>
-      <div className="container py-3" style={{ backgroundColor: "white" }}>
+      <div className="container pb-2" style={{ backgroundColor: "white" }}>
         <div className="row row-cols-4 galeri-row">
-          {data.map((item, index) => (
-            <div
-              className="col galeri-col align-self-center px-1"
-              key={item.id}
-            >
+          {source.map((item, index) => (
+            <div className="col galeri-col align-self-center px-1">
               <div className="overlay-container">
                 <img
-                  src={item.media_url}
+                  src={`/assets/new_born/new_born${index + 1}.jpg`}
                   alt="galeri-terbaru"
                   className="galeri-img px-0"
                 />

@@ -151,7 +151,7 @@ function Services() {
           >
             <div className="card rounded-0 border-0 overlay-container">
               <img
-                src="/assets/logo.jpg"
+                src="/assets/new_born/new_born5.jpg"
                 className="card-img rounded-0 home-service-img"
                 alt="new-born-img"
               />
@@ -171,7 +171,7 @@ function Services() {
           <Link href="/galeri/group" className="stretched-link home-card-title">
             <div className="card rounded-0 border-0 overlay-container">
               <img
-                src="/assets/logo.jpg"
+                src="/assets/group/group4.jpg"
                 className="card-img rounded-0 home-service-img"
                 alt="group-img"
               />

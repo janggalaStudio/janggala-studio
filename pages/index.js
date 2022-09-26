@@ -70,14 +70,14 @@ export default function Home() {
             </Carousel.Item>
             <Carousel.Item>
               <img
-                src="/assets/bg-2.jpg"
+                src="/assets/wedding/wedding10.jpg"
                 className="d-block home-img"
                 alt="Studio Jenggala"
               />
             </Carousel.Item>
             <Carousel.Item>
               <img
-                src="/assets/bg-3.jpg"
+                src="/assets/new_born/new_born2.jpg"
                 className="d-block home-img"
                 alt="Studio Jenggala"
               />
