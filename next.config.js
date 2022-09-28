@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   env: {
-    WHATSAPP: "(+62)88238104745",
+    WHATSAPP: "6288238104745",
   },
 };
 
