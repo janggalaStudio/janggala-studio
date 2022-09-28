@@ -58,7 +58,7 @@ function Galeri() {
           </div>
         </div>
       </div>
-      <div className="container py-3" style={{ backgroundColor: "white" }}>
+      <div className="container pb-2" style={{ backgroundColor: "white" }}>
         {loading ? (
           <div className="justify-content-center d-flex spinner-container align-items-center">
             <div
