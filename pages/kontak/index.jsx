@@ -3,7 +3,7 @@ import Layout from "../../components/layout/kontak";
 
 export default function Kontak() {
   const whatsapp = () => {
-    window.open("https://wa.me/(+62)88238104745");
+    window.open(`https://wa.me/${process.env.WHATSAPP}`);
   };
 
   const instagramMain = () => {
