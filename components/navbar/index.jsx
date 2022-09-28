@@ -20,13 +20,6 @@ export default function NavbarMenu() {
       >
         <Container>
           <Navbar.Brand href="/">
-            {/* <Image
-              src="/assets/logo/janggala_transparan1.png"
-              alt="Logo.img"
-              width={40}
-              height={30}
-              style={{ objectFit: "fill" }}
-            /> */}
             <img
               src="/assets/logo/janggala_transparan_square.png"
               alt="Logo.img"
@@ -45,25 +38,15 @@ export default function NavbarMenu() {
                 <img
                   src="/assets/logo/janggala_transparan_square.png"
                   alt="Logo.img"
-                  style={{ objectFit: "fill", width: "40px", height: "auto" }}
+                  style={{ objectFit: "cover", width: "40px", height: "auto" }}
                 />
               </Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="ms-auto">
-                <NavDropdown
-                  className="mx-1"
-                  title="GALERI"
-                  // style={{ color: "white" }}
-                >
+                <NavDropdown className="mx-1" title="GALERI">
                   <NavDropdown.Item href="/galeri" className="navbar-item">
                     Foto Terbaru
-                  </NavDropdown.Item>
-                  <NavDropdown.Item
-                    href="/galeri/wedding"
-                    className="navbar-item"
-                  >
-                    Foto Wedding
                   </NavDropdown.Item>
                   <NavDropdown.Item
                     href="/galeri/family"
@@ -72,22 +55,28 @@ export default function NavbarMenu() {
                     Foto Family
                   </NavDropdown.Item>
                   <NavDropdown.Item
+                    href="/galeri/wedding"
+                    className="navbar-item"
+                  >
+                    Foto Wedding
+                  </NavDropdown.Item>
+                  <NavDropdown.Item
                     href="/galeri/personal"
                     className="navbar-item"
                   >
-                    Foto Personal
+                    Foto Prewedding
                   </NavDropdown.Item>
                   <NavDropdown.Item
-                    href="/galeri/graduation"
+                    href="/galeri/engagement"
+                    className="navbar-item"
+                  >
+                    Foto Engagement
+                  </NavDropdown.Item>
+                  <NavDropdown.Item
+                    href="/galeri/prewedding"
                     className="navbar-item"
                   >
                     Foto Graduation
-                  </NavDropdown.Item>
-                  <NavDropdown.Item
-                    href="/galeri/new-born"
-                    className="navbar-item"
-                  >
-                    Foto New Born
                   </NavDropdown.Item>
                   <NavDropdown.Item
                     href="/galeri/maternity"
@@ -96,10 +85,16 @@ export default function NavbarMenu() {
                     Foto Maternity
                   </NavDropdown.Item>
                   <NavDropdown.Item
-                    href="/galeri/home-service"
+                    href="/galeri/new-born"
                     className="navbar-item"
                   >
-                    Foto Home Service
+                    Foto New Born
+                  </NavDropdown.Item>
+                  <NavDropdown.Item
+                    href="/galeri/group"
+                    className="navbar-item"
+                  >
+                    Foto Group
                   </NavDropdown.Item>
                 </NavDropdown>
                 <Nav.Link className="mx-1" href="/kontak">

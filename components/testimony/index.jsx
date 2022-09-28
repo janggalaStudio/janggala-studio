@@ -4,17 +4,13 @@ function Testimony() {
   return (
     <div className="home-testimony py-5 container-fluid">
       <h3 className="text-center title-text">Testimoni</h3>
-      <div
-        className="row row-cols-4 g-4 justify-content-center mt-4"
-        // style={{ padding: "0 100px" }}
-      >
+      <div className="row row-cols-5 g-4 justify-content-center mt-4">
         <div className="col home-testimony-col">
           <div className="card border-0 home-testimony-card">
             <div className="card-body">
               <p className="card-text home-testimony-text">
-                Harganya murah kualitas wahhh!!! Foto di studio tema nya gak
-                ngebosenin, pas photo bisa langsung jadi, studio adem, tema
-                selalu up to date, kekinian pkoknya lahh.
+                Jauh jauh dari bekasi ga sia sia dapet juga studio foto di
+                daerah boyolali Memuaskan, ramah. Mantep dah pokoknya🥰
               </p>
               <div className="row home-testimony-user align-items-center">
                 <div className="col">
@@ -25,7 +21,7 @@ function Testimony() {
                   />
                 </div>
                 <div className="col-auto home-testimony-name">
-                  <h6 className="card-title home-testimony-name">Angga AD</h6>
+                  <h6 className="card-title home-testimony-name">Agung Acil</h6>
                   <i className="bi-star-fill" style={{ color: "yellow" }}></i>
                   <i className="bi-star-fill" style={{ color: "yellow" }}></i>
                   <i className="bi-star-fill" style={{ color: "yellow" }}></i>
@@ -69,8 +65,7 @@ function Testimony() {
           <div className="card border-0 home-testimony-card">
             <div className="card-body">
               <p className="card-text home-testimony-text">
-                Fotographer profesional, buat usaha di desanya agar dekat dengan
-                orang yang dicintainya 💝💝💝💝💝💝
+                Good Art & style photo studio
               </p>
               <div className="row home-testimony-user align-items-center">
                 <div className="col">
@@ -81,8 +76,34 @@ function Testimony() {
                   />
                 </div>
                 <div className="col-auto home-testimony-name">
+                  <h6 className="card-title home-testimony-name">Hari Ongko</h6>
+                  <i className="bi-star-fill" style={{ color: "yellow" }}></i>
+                  <i className="bi-star-fill" style={{ color: "yellow" }}></i>
+                  <i className="bi-star-fill" style={{ color: "yellow" }}></i>
+                  <i className="bi-star-fill" style={{ color: "yellow" }}></i>
+                  <i className="bi-star-fill" style={{ color: "yellow" }}></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col home-testimony-col">
+          <div className="card border-0 home-testimony-card">
+            <div className="card-body">
+              <p className="card-text home-testimony-text">
+                Mantabbbb hasil fotonya
+              </p>
+              <div className="row home-testimony-user align-items-center">
+                <div className="col">
+                  <img
+                    src="/assets/testimony/testimony4.png"
+                    alt=""
+                    className="home-testimony-img rounded-circle"
+                  />
+                </div>
+                <div className="col-auto home-testimony-name">
                   <h6 className="card-title home-testimony-name">
-                    Syarif Hidayat
+                    Odnafid k.z
                   </h6>
                   <i className="bi-star-fill" style={{ color: "yellow" }}></i>
                   <i className="bi-star-fill" style={{ color: "yellow" }}></i>
