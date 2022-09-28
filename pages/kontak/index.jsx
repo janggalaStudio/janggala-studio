@@ -42,7 +42,7 @@ export default function Kontak() {
               type="button"
               className="btn btn-success kontak-text w-100"
             >
-              <i className="bi-whatsapp"></i> {process.env.WHATSAPP}
+              <i className="bi-whatsapp"></i> +{process.env.WHATSAPP}
             </button>
             <h6 className="kontak-title pt-4">Instagram</h6>
             <button

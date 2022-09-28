@@ -28,7 +28,11 @@ a {
   font-family: "Raleway", sans-serif;
   letter-spacing: 1px;
   font-size: 13px;
-  /* font-weight: bold; */
+}
+
+.footer-whatsapp {
+  letter-spacing: 1px;
+  font-size: 13px;
 }
 
 .footer-title {

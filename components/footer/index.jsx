@@ -30,9 +30,9 @@ function Footer() {
                   <i className="bi-instagram"></i> @dokumentasisoloboyolali
                 </p>
               </div>
-              <div className="row footer-content">
+              <div className="row footer-whatsapp">
                 <p style={{ color: "white" }}>
-                  <i className="bi-whatsapp"></i> 0997135659035
+                  <i className="bi-whatsapp"></i> +{process.env.WHATSAPP}
                 </p>
               </div>
             </div>
