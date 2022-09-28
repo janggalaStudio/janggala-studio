@@ -176,10 +176,11 @@ export default function Home() {
               </div>
               <div className="col-auto">
                 <iframe
-                  src="https://www.youtube.com/embed/YmfUJpiJ1kM"
-                  frameBorder="0"
-                  height="200"
+                  src="https://drive.google.com/file/d/1B4DHtG-_z8v_otI82gh_oUc3N-1M2Yv5/preview"
+                  // width="640"
                   className="w-100"
+                  height="200"
+                  allow="autoplay"
                 ></iframe>
               </div>
               <div className="col-auto">
