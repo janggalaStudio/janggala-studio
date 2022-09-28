@@ -21,7 +21,7 @@ export default function NavbarMenu() {
         <Container>
           <Navbar.Brand href="/">
             <img
-              src="/assets/logo/janggala_transparan_square.png"
+              src="/assets/logo/Janggala_transparan_square.png"
               alt="Logo.img"
               style={{ objectFit: "fill", width: "40px", height: "auto" }}
             />
