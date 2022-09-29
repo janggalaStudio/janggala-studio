@@ -10,6 +10,7 @@ import Image from "next/image";
 
 export default function Home() {
   const banner = JSON.parse(process.env.BANNER);
+  const video = JSON.parse(process.env.VIDEO);
 
   const config = {
     animate: true,
@@ -170,34 +171,27 @@ export default function Home() {
             <div className="row row-cols-3 justify-content-center d-flex">
               <div className="col-auto">
                 <iframe
-                  src="https://www.instagram.com/p/CT6xoFAp4v6/?utm_source=ig_web_copy_link"
-                  frameBorder="0"
-                  height="200"
-                  className="w-100"
-                ></iframe>
-              </div>
-              <div className="col-auto">
-                <iframe
-                  src="https://drive.google.com/file/d/1B4DHtG-_z8v_otI82gh_oUc3N-1M2Yv5/preview"
-                  // width="640"
+                  src={video[0]}
                   className="w-100"
                   height="200"
                   allow="autoplay"
+                  frameBorder="0"
                 ></iframe>
               </div>
               <div className="col-auto">
                 <iframe
-                  src="https://www.youtube.com/embed/YmfUJpiJ1kM"
+                  src={video[1]}
                   frameBorder="0"
                   height="200"
                   className="w-100"
+                  allow="autoplay"
                 ></iframe>
               </div>
             </div>
           </div>
         </div>
         <Testimony />
-        <div className="my-5 container">
+        {/* <div className="my-5 container">
           <h3 className="text-center title-text">FAQ</h3>
           <div className="home-faq justify-content-center d-flex pt-3">
             <Faq
@@ -212,6 +206,7 @@ export default function Home() {
             />
           </div>
         </div>
+         */}
         <Link href="/kontak">
           <button
             type="button"

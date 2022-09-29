@@ -3,6 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   env: {
+    VIDEO: process.env.VIDEO,
     WHATSAPP: process.env.WHATSAPP,
     BANNER: process.env.BANNER,
     FAMILY: process.env.FAMILY,
