@@ -9,6 +9,8 @@ import { useState } from "react";
 import Image from "next/image";
 
 export default function Home() {
+  const banner = JSON.parse(process.env.BANNER);
+
   const config = {
     animate: true,
     openOnload: 0,
@@ -59,21 +61,21 @@ export default function Home() {
           >
             <Carousel.Item>
               <img
-                src="/assets/banner/banner1.jpg"
+                src={banner[0]}
                 className="home-img d-block"
                 alt="Studio Jenggala"
               />
             </Carousel.Item>
             <Carousel.Item>
               <img
-                src="/assets/banner/banner2.jpg"
+                src={banner[1]}
                 className="d-block home-img"
                 alt="Studio Jenggala"
               />
             </Carousel.Item>
             <Carousel.Item>
               <img
-                src="/assets/banner/banner3.jpg"
+                src={banner[2]}
                 className="d-block home-img"
                 alt="Studio Jenggala"
               />
