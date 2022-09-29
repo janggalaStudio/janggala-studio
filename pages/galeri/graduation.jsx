@@ -17,14 +17,7 @@ function Graduation() {
     });
   }
 
-  const source = [
-    "/assets/graduation/graduation1.jpg",
-    "/assets/graduation/graduation2.jpg",
-    "/assets/graduation/graduation3.jpg",
-    "/assets/graduation/graduation4.jpg",
-    "/assets/graduation/graduation5.jpg",
-    "/assets/graduation/graduation6.jpg",
-  ];
+  const source = JSON.parse(process.env.GRADUATION);
 
   return (
     <>
@@ -41,10 +34,10 @@ function Graduation() {
       <div className="container pb-2" style={{ backgroundColor: "white" }}>
         <div className="row row-cols-4 galeri-row">
           {source.map((item, index) => (
-            <div className="col galeri-col align-self-center px-1">
+            <div className="col galeri-col align-self-center px-1" key={index}>
               <div className="overlay-container">
                 <img
-                  src={`/assets/graduation/graduation${index + 1}.jpg`}
+                  src={item}
                   alt="galeri-graduation"
                   className="galeri-img px-0"
                 />

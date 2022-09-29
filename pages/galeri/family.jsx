@@ -17,13 +17,7 @@ function Family() {
     });
   }
 
-  const source = [
-    "/assets/family/family1.jpg",
-    "/assets/family/family2.jpg",
-    "/assets/family/family3.jpg",
-    "/assets/family/family4.jpg",
-    "/assets/family/family5.jpg",
-  ];
+  const source = JSON.parse(process.env.FAMILY);
 
   return (
     <>
@@ -40,10 +34,10 @@ function Family() {
       <div className="container pb-2" style={{ backgroundColor: "white" }}>
         <div className="row row-cols-4 galeri-row">
           {source.map((item, index) => (
-            <div className="col galeri-col align-self-center px-1">
+            <div className="col galeri-col align-self-center px-1" key={index}>
               <div className="overlay-container">
                 <img
-                  src={`/assets/family/family${index + 1}.jpg`}
+                  src={item}
                   alt="galeri-family"
                   className="galeri-img px-0"
                 />
