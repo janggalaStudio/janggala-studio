@@ -17,12 +17,7 @@ function Group() {
     });
   }
 
-  const source = [
-    "/assets/group/group1.jpg",
-    "/assets/group/group2.jpg",
-    "/assets/group/group3.jpg",
-    "/assets/group/group4.jpg",
-  ];
+  const source = JSON.parse(process.env.GROUP);
 
   return (
     <>
@@ -39,10 +34,10 @@ function Group() {
       <div className="container pb-2" style={{ backgroundColor: "white" }}>
         <div className="row row-cols-4 galeri-row">
           {source.map((item, index) => (
-            <div className="col galeri-col align-self-center px-1">
+            <div className="col galeri-col align-self-center px-1" key={index}>
               <div className="overlay-container">
                 <img
-                  src={`/assets/group/group${index + 1}.jpg`}
+                  src={item}
                   alt="galeri-group"
                   className="galeri-img px-0"
                 />
