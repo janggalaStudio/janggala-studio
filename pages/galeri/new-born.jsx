@@ -1,5 +1,4 @@
 import Layout from "../../components/layout";
-import axios from "../../utils/axios";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import FsLightbox from "fslightbox-react";
