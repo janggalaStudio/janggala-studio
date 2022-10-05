@@ -16,7 +16,7 @@ export default function NavbarMenu() {
         className="navbar-style"
         variant="dark"
         bg="dark"
-        // style={{backgroundColor: 'black'}}
+        // style={{backgroundColor: 'black'} }
       >
         <Container>
           <Navbar.Brand href="/">
